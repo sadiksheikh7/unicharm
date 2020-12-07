@@ -409,19 +409,19 @@
 
   <script src="assets/js/shared/dropify.min.js"></script> -->
 
-  <!-- data table js start
-<script src="assets/js/shared/data-table/jquery.dataTables.min.js"></script>
-<script src="assets/js/shared/data-table/dataTables.bootstrap.min.js"></script>
-<script src="assets/js/shared/data-table/dataTables.buttons.min.js"></script>
-<script src="assets/js/shared/data-table/buttons.bootstrap.min.js"></script>
-<script src="assets/js/shared/data-table/jszip.min.js"></script>
+  <!-- data table js start -->
+<script src="assets/js/vendor/data-table/jquery.dataTables.min.js"></script>
+<script src="assets/js/vendor/data-table/dataTables.bootstrap.min.js"></script>
+<script src="assets/js/vendor/data-table/dataTables.buttons.min.js"></script>
+<script src="assets/js/vendor/data-table/buttons.bootstrap.min.js"></script>
+<script src="assets/js/vendor/data-table/jszip.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/pdfmake.min.js"></script>
-<script src="assets/js/shared/data-table/vfs_fonts.js"></script>
-<script src="assets/js/shared/data-table/buttons.html5.min.js"></script>
-<script src="assets/js/shared/data-table/buttons.print.min.js"></script>
- data table js end -->
+<script src="assets/js/vendor/data-table/vfs_fonts.js"></script>
+<script src="assets/js/vendor/data-table/buttons.html5.min.js"></script>
+<script src="assets/js/vendor/data-table/buttons.print.min.js"></script>
+<!-- data table js end -->
 <!-- <script src="assets/js/shared/date-picker/bootstrap-datepicker.min.js"></script>
-<script src="assets/js/shared/custom.js"></script> -->
+<script src="assets/js/shared/custom.js"></script>
 
 <script type="text/javascript" src="assets/js/vendor/jquery.min.js"></script>
 <script type="text/javascript" src="assets/js/vendor/popper.min.js"></script>
@@ -434,3 +434,22 @@
 
 </body>
 </html>
+<script>
+  $(document).ready(function() {
+    $('#example').DataTable( {
+        responsive: {
+            details: {
+                display: $.fn.dataTable.Responsive.display.modal( {
+                    header: function ( row ) {
+                        var data = row.data();
+                        return 'Details for '+data[0]+' '+data[1];
+                    }
+                } ),
+                renderer: $.fn.dataTable.Responsive.renderer.tableAll( {
+                    tableClass: 'table'
+                } )
+            }
+        }
+    } );
+} );
+</script>

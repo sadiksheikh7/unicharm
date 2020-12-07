@@ -12,8 +12,8 @@
     <!-- <link rel="stylesheet" href="assets/css/shared/dropify.min.css"> -->
 
     <!-- data table start -->
-    <!-- <link rel="stylesheet" href="assets/css/shared/data-table/dataTables.bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/shared/data-table/buttons.bootstrap.min.css"> -->
+    <link rel="stylesheet" href="assets/css/vendor/data-table/dataTables.bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/vendor/data-table/buttons.bootstrap.min.css"> 
     <!-- data table start -->
 
     <!-- date picker -->
@@ -121,7 +121,7 @@
                 <ul class="m-0 list-none mb-3">
                   <h5 class="nav-title">Retailer Management</h5>
                   <li class="nav-item">
-                    <a class="nav-link" href="index.php">
+                    <a class="nav-link" href="retailers.php">
                       <span class="menu-title">Retailers</span>
                     </a>
                   </li>
