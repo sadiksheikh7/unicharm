@@ -319,6 +319,25 @@
   border: 0px !important; }
 
 /* my css start */
+.total-details {
+  margin-bottom: 30px; }
+
+.total-details p {
+  font-size: 16px;
+  color: #828282;
+  margin-bottom: 3px; }
+
+.total-details h3 {
+  font-weight: 500; }
+
+.main-total-details {
+  border-left: 1px solid #ccc;
+  padding-left: 30px !important;
+  padding-top: 35px; }
+
+.dashboard-box {
+  min-height: 270px !important; }
+
 .text-pink {
   color: #ef726f; }
 
@@ -10036,7 +10055,8 @@ input[type=submit]::-moz-focus-inner {
 
 .dropdown-menu.dropdown-menu-right {
   left: auto !important;
-  right: 0 !important; }
+  right: 0 !important;
+  transform: translate3d(0px, 23px, 0px) !important; }
 
 .form-control.form-control-lg {
   padding: 0.5rem 0.75rem; }
@@ -10435,6 +10455,9 @@ input[type=submit]::-moz-focus-inner {
 
 .font-16 {
   font-size: 16px; }
+
+.font-18 {
+  font-size: 18px !important; }
 
 .custom-modal .modal-content {
   border-radius: 0px; }
