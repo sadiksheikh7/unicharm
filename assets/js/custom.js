@@ -1,3 +1,7 @@
+
+// chart js
+var ChartColor = ["#5D62B4", "#54C3BE", "#EF726F", "#F9C446", "rgb(93.0, 98.0, 180.0)", "#21B7EC", "#04BCCC"];
+
 // slick slider
 $('.multiple-items').slick({
   infinite: false,
@@ -113,6 +117,9 @@ $(document).ready(function () {
 
 
 
+
+
+
 // Button Rpplr effects JS Start
 (function($) {
 $(".ripple-effect").click(function(e){
@@ -148,6 +155,8 @@ $(window).scroll(function() {
 });
 
 
+
+
   $(document).ready(function() {
 	$('a[rel="relativeanchor"]').click(function(){
 	    $('html, body').animate({
@@ -175,11 +184,7 @@ $(window).scroll(function() {
 
 });
 
-// For a pie chart
-var myPieChart = new Chart(ctx, {
-  type: 'pie',
-  data: data,
-  options: options
-});
+
+
 
 new WOW().init();

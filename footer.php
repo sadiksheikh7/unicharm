@@ -430,6 +430,15 @@
 <script type="text/javascript" src="assets/js/vendor/slick/slick.min.js"></script>
 <!-- chart JS -->
 <script type="text/javascript" src="assets/js/vendor/chart/Chart.min.js"></script>
+
+
+<!--  -->
+<script src="assets/js/vendor/chart/vendor.bundle.base.js"></script>
+<script src="assets/js/vendor/chart/misc.js"></script>
+<script src="assets/js/vendor/chart/chart.js"></script>
+<!--  -->
+
+
 <script type="text/javascript" src="assets/js/custom.js"></script>
 
 </body>
