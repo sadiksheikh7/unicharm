@@ -409,8 +409,16 @@
 
   <script src="assets/js/shared/dropify.min.js"></script> -->
 
+
+<script type="text/javascript" src="assets/js/vendor/jquery.min.js"></script>
+<script type="text/javascript" src="assets/js/vendor/popper.min.js"></script>
+<script type="text/javascript" src="assets/js/vendor/bootstrap.min.js"></script>
+<script type="text/javascript" src="assets/js/animate/wow.min.js"></script>
+
+
+
   <!-- data table js start -->
-<script src="assets/js/vendor/data-table/jquery.dataTables.min.js"></script>
+  <script src="assets/js/vendor/data-table/jquery.dataTables.min.js"></script>
 <script src="assets/js/vendor/data-table/dataTables.bootstrap.min.js"></script>
 <script src="assets/js/vendor/data-table/dataTables.buttons.min.js"></script>
 <script src="assets/js/vendor/data-table/buttons.bootstrap.min.js"></script>
@@ -419,46 +427,18 @@
 <script src="assets/js/vendor/data-table/vfs_fonts.js"></script>
 <script src="assets/js/vendor/data-table/buttons.html5.min.js"></script>
 <script src="assets/js/vendor/data-table/buttons.print.min.js"></script>
+
+
 <!-- data table js end -->
-<!-- <script src="assets/js/shared/date-picker/bootstrap-datepicker.min.js"></script>
-<script src="assets/js/shared/custom.js"></script>
+<script src="assets/js/custom.js"></script>
 
-<script type="text/javascript" src="assets/js/vendor/jquery.min.js"></script>
-<script type="text/javascript" src="assets/js/vendor/popper.min.js"></script>
-<script type="text/javascript" src="assets/js/vendor/bootstrap.min.js"></script>
-<script type="text/javascript" src="assets/js/animate/wow.min.js"></script>
-<script type="text/javascript" src="assets/js/vendor/slick/slick.min.js"></script>
-<!-- chart JS -->
-<script type="text/javascript" src="assets/js/vendor/chart/Chart.min.js"></script>
-
-
-<!--  -->
+<!-- chart js -->
 <script src="assets/js/vendor/chart/vendor.bundle.base.js"></script>
 <script src="assets/js/vendor/chart/misc.js"></script>
-<script src="assets/js/vendor/chart/chart.js"></script>
-<!--  -->
+<script src="assets/js/vendor/chart/chart.js"></script> 
+<!-- chart js end -->
 
 
-<script type="text/javascript" src="assets/js/custom.js"></script>
 
 </body>
 </html>
-<script>
-  $(document).ready(function() {
-    $('#example').DataTable( {
-        responsive: {
-            details: {
-                display: $.fn.dataTable.Responsive.display.modal( {
-                    header: function ( row ) {
-                        var data = row.data();
-                        return 'Details for '+data[0]+' '+data[1];
-                    }
-                } ),
-                renderer: $.fn.dataTable.Responsive.renderer.tableAll( {
-                    tableClass: 'table'
-                } )
-            }
-        }
-    } );
-} );
-</script>

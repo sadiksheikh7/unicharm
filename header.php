@@ -14,6 +14,7 @@
     <!-- data table start -->
     <link rel="stylesheet" href="assets/css/vendor/data-table/dataTables.bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/vendor/data-table/buttons.bootstrap.min.css"> 
+    <!--<link rel="stylesheet" href="https://cdn.datatables.net/v/dt/dt-1.10.22/datatables.min.css">-->
     <!-- data table start -->
 
     <!-- date picker -->
@@ -126,7 +127,7 @@
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="javascript:void(0)">
+                    <a class="nav-link" href="add-retailer.php">
                       <span class="menu-title">Add Retailer</span>
                     </a>
                   </li>
