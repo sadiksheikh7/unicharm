@@ -431,6 +431,18 @@
       padding: 2px 0;
       display: inline-block; }
 
+.cancel-btn {
+  padding: 6px 12px; }
+
+#note-div {
+  display: none; }
+
+.no-gutter {
+  padding: 0px; }
+
+.br-90 {
+  border-radius: 90px; }
+
 .total-details {
   margin-bottom: 30px; }
 
