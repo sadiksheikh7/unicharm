@@ -143,7 +143,7 @@
                 <ul class="m-0 list-none mb-3">
                   <h5 class="nav-title">Accounts</h5>
                   <li class="nav-item">
-                    <a class="nav-link" href="javascript:void(0)">
+                    <a class="nav-link" href="ledger.php">
                       <span class="menu-title">Purchases A/C</span>
                     </a>
                   </li>
