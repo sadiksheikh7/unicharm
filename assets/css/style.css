@@ -319,6 +319,21 @@
   border: 0px !important; }
 
 /* my css start */
+.main-ledger-table {
+  width: 100%; }
+
+.all-modules-box {
+  margin-bottom: 50px; }
+  .all-modules-box h3 {
+    font-size: 18px;
+    font-weight: 500; }
+  .all-modules-box ul {
+    padding-left: 0px; }
+    .all-modules-box ul li a {
+      color: #01a9f4;
+      padding: 2px 0;
+      display: inline-block; }
+
 .total-details {
   margin-bottom: 30px; }
 

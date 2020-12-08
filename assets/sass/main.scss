@@ -354,6 +354,26 @@ $white: #fff;
 	border: 0px !important;
 }
 /* my css start */
+.main-ledger-table {
+    width: 100%;
+}
+.all-modules-box {
+	margin-bottom: 50px;
+	h3 {
+		font-size: 18px;
+		font-weight: 500;
+	}
+	ul {
+		padding-left: 0px;
+		li {
+			a {
+				color: #01a9f4;
+				padding: 2px 0;
+				display: inline-block;
+			}
+		}
+	}
+}
 .total-details {
     margin-bottom: 30px;
 }

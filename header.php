@@ -39,21 +39,21 @@
           <ul class="navbar-nav ml-auto">
 
           <li class="nav-item dropdown">
-            <a class="nav-link btn-white-border" href="#">
+            <a class="nav-link btn-white-border" href="javascript:void(0)">
               <i class="fa fa-plus"></i>
               Master
             </a>
           </li>
 
           <li class="nav-item dropdown">
-            <a class="nav-link count-indicator" href="#">
+            <a class="nav-link count-indicator" href="javascript:void(0)">
               <i class="fa fa-bell"></i>
               <span class="count">7</span>
             </a>
           </li>
 
           <li class="nav-item dropdown">
-            <a class="nav-link count-indicator" href="#">
+            <a class="nav-link count-indicator" href="javascript:void(0)">
               <i class="fa fa-info-circle ml-2" style="font-size: 21px !important;"></i>
             </a>
           </li>
@@ -142,7 +142,7 @@
                 <ul class="m-0 list-none mb-3">
                   <h5 class="nav-title">Accounts</h5>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">
+                    <a class="nav-link" href="javascript:void(0)">
                       <span class="menu-title">Purchases A/C</span>
                     </a>
                   </li>
@@ -174,17 +174,17 @@
                 <ul class="m-0 list-none mb-3">
                   <h5 class="nav-title">Billing</h5>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">
+                    <a class="nav-link" href="javascript:void(0)">
                       <span class="menu-title">Invoices</span>
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">
+                    <a class="nav-link" href="javascript:void(0)">
                       <span class="menu-title">Create Invoice</span>
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">
+                    <a class="nav-link" href="javascript:void(0)">
                       <span class="menu-title">Billing Setting</span>
                     </a>
                   </li>
@@ -196,57 +196,57 @@
               <h5 class="nav-title">Menus</h5>
 
                 <li class="nav-item">
-                  <a class="nav-link" href="#">
+                  <a class="nav-link" href="javascript:void(0)">
                     <span class="menu-title">Dashboard</span>
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">
+                  <a class="nav-link" href="javascript:void(0)">
                     <span class="menu-title">Products</span>
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">
+                  <a class="nav-link" href="javascript:void(0)">
                     <span class="menu-title">Inventory</span>
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">
+                  <a class="nav-link" href="javascript:void(0)">
                     <span class="menu-title">Company</span>
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">
+                  <a class="nav-link" href="javascript:void(0)">
                     <span class="menu-title">Manage User</span>
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">
+                  <a class="nav-link" href="javascript:void(0)">
                     <span class="menu-title">Taxes</span>
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">
+                  <a class="nav-link" href="javascript:void(0)">
                     <span class="menu-title">Financial Year</span>
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">
+                  <a class="nav-link" href="javascript:void(0)">
                     <span class="menu-title">Claim</span>
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">
+                  <a class="nav-link" href="javascript:void(0)">
                     <span class="menu-title">Settings</span>
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">
+                  <a class="nav-link" href="javascript:void(0)">
                     <span class="menu-title">Reports</span>
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">
+                  <a class="nav-link" href="all-modules.php">
                     <span class="menu-title text-cyan bold">Show More..</span>
                   </a>
                 </li>
@@ -303,7 +303,7 @@
     <div class="main-panel">
 
     <!-- <div class="top-advertisemen d-flex align-items-center justify-content-between">
-      <h4 class="card-title mb-0"><span class="text-blue">Your 15 DAY Trial Plan ended on 23-08-2020. Apply to upgrade your subscription.</span></h4> <a href="#"><i class="fa fa-times"></i></a>
+      <h4 class="card-title mb-0"><span class="text-blue">Your 15 DAY Trial Plan ended on 23-08-2020. Apply to upgrade your subscription.</span></h4> <a href="javascript:void(0)"><i class="fa fa-times"></i></a>
     </div> -->
 
     <div class="header-toggle d-flex align-items-center">
