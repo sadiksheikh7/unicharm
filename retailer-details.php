@@ -1,5 +1,20 @@
 <!-- header -->
   <?php include 'header.php';?>
+  <style>
+    .cancel-btn{padding:6px 12px;}
+    #note-div{display:none;}
+    .no-gutter{padding:0px;}
+    .br-90{border-radius:90px;}
+    #side-drawer {height: 100vh;width: 250px;top: 134px;right: -336px;z-index: 1032;transition: right 0.25s ease;box-shadow:0px 0px 5px 0px rgba(0,0,0,0.05);max-height: calc(100vh - 125px);overflow-y: scroll;}
+    #side-drawer a{max-width: 250px;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
+    #side-drawer-void {height: 100%;width: 100%;top: 0;z-index: 1031;}
+    .p-20{padding:20px;}
+    .bg-theme{background-color:#1a237e;}
+    /*#side-drawer ul{max-height: calc(100vh - 125px);overflow-y: scroll;}*/
+    #side-drawer ul a{padding: 12px;color: #000;border-bottom: 1px solid #eee!important;}
+    #side-drawer ul a:hover{text-decoration:none;color:#1a237e;}
+    .bordered{border-bottom:1px solid #eee;}
+  </style>
   <!-- partial -->
     <div class="row">
       <div class="col-lg-12">
@@ -9,7 +24,7 @@
               <div class="col-lg-6">
                 <div class="profile-wrap">
                   <h3>Hindustan Merchantile</h3>
-                  <h6 class="text-pink">Code : 9C2EAA15EF</h6>
+                  <p class="text-pink mb-0">Code : 9C2EAA15EF</p>
                   <p>51 st Floor, J S arcade, Sector, Noida</p>
                   <a href="javascript:void(0);" onclick="myFunction()" id="note-label">
                     <small>Add Note</small>
@@ -22,7 +37,7 @@
               <div class="col-lg-6 text-right">
                 <button type="button" class="btn btn-secondary btn-md mr-3 br-90"><i class="fa fa-edit" aria-hidden="true"></i> Edit</button>
                 <button type="button" class="btn btn-success btn-md mr-3 br-90"><i class="fa fa-plus" aria-hidden="true"></i> Create Invoice</button>
-                <button type="button" class="btn btn-warning btn-md br-90"><i class="fa fa-plus" aria-hidden="true"></i> Retailer Directory</button>
+                <button type="button" class="btn btn-warning btn-md br-90" class="navbar-toggler" onclick="openSideDrawer()"><i class="fa fa-address-book" aria-hidden="true"></i> Retailer Directory</button>
                 <div class="balance-stats mt-3">
                   <span><b>Opening Balance :</b>&nbsp; <i class="fa fa-rupee" aria-hidden="true"></i> 3,20,000.00</span>
                 </div>
@@ -269,12 +284,103 @@
           </div>
         </div>
       </div>
+      <div class="col-lg-12">
+        <div id="side-drawer" class="position-fixed">
+          <div class="bg-white">
+              <div class="action-wrap p-20 bg-theme">
+                <div class="d-md-flex align-items-center">
+                  <div class="text-white">Retailers Directory</div>
+                  <div class="ml-auto align-items-center">
+                    <div class="dl">
+                      <a href="javascript:void(0);" class="btn btn-secondary br-90">
+                        <i class="fa fa-plus mr-0" aria-hidden="true"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Side Drawer Title -->
+              <form class="search-form p-20 bordered">
+                <div class="form-group mb-0">
+                  <input type="search" class="form-control br-90" placeholder="Filter by name">
+                </div>
+              </form>
+              <!-- Side Drawer Links -->
+              <ul id="links" class="list-group p-20 pt-0" onclick="closeSideDrawer()">
+                <a href="retailer-details.php" class="border-0 rounded-0 active">
+                  <span>BuyDrug</span>
+                </a>
+                <a href="retailer-details.php" class="border-0 rounded-0">
+                  <span>mChemist</span>
+                </a>
+                <a href="retailer-details.php" class="border-0 rounded-0">
+                  <span>MediDart</span>
+                </a>
+                <a href="retailer-details.php" class="border-0 rounded-0">
+                  <span>Medplus Mart</span>
+                </a>
+                <a href="retailer-details.php" class="border-0 rounded-0">
+                  <span>Mera Pharmacy</span>
+                </a>
+                <a href="retailer-details.php" class="border-0 rounded-0">
+                  <span>Netmeds</span>
+                </a>
+                <a href="retailer-details.php" class="border-0 rounded-0">
+                  <span>Zigy</span>
+                </a>
+                <a href="retailer-details.php" class="border-0 rounded-0">
+                  <span>D'Mart</span>
+                </a>
+                <a href="retailer-details.php" class="border-0 rounded-0">
+                  <span>Mymedical</span>
+                </a>
+                <a href="retailer-details.php" class="border-0 rounded-0">
+                  <span>MediBazaar</span>
+                </a>
+                <a href="retailer-details.php" class="border-0 rounded-0">
+                  <span>MetroOnline</span>
+                </a>
+                <a href="retailer-details.php" class="border-0 rounded-0">
+                  <span>BigBazaar</span>
+                </a>
+                <a href="retailer-details.php" class="border-0 rounded-0">
+                  <span>Medplus Mart</span>
+                </a>
+                <a href="retailer-details.php" class="border-0 rounded-0">
+                  <span>BuyDrug</span>
+                </a>
+                <a href="retailer-details.php" class="border-0 rounded-0">
+                  <span>Mera Pharmacy</span>
+                </a>
+                <a href="retailer-details.php" class="border-0 rounded-0">
+                  <span>MediBazaar</span>
+                </a>
+                <a href="retailer-details.php" class="border-0 rounded-0">
+                  <span>MetroOnline</span>
+                </a>
+                <a href="retailer-details.php" class="border-0 rounded-0">
+                  <span>BigBazaar</span>
+                </a>
+                <a href="retailer-details.php" class="border-0 rounded-0">
+                  <span>Medplus Mart</span>
+                </a>
+                <a href="retailer-details.php" class="border-0 rounded-0">
+                  <span>BuyDrug</span>
+                </a>
+                <a href="retailer-details.php" class="border-0 rounded-0">
+                  <span>Mera Pharmacy</span>
+                </a>
+              </ul>
+          </div>
+        </div>
+        <div id="side-drawer-void" class="position-fixed d-none" onclick="closeSideDrawer()"></div>
+      </div>
     </div>
     <!-- content-wrapper ends -->
-  
   <!-- footer -->
   <?php include 'footer.php';?>
   <script>
+    //* Add note js retailer details page
     function myFunction() {
       var x = document.getElementById("note-div");
       var y = document.getElementById("note-label");
@@ -285,5 +391,16 @@
         x.style.display = "block";
         y.style.display = "none";
       }
+    }
+    //* Sidebar js retailer details page
+    function openSideDrawer() {
+      document.getElementById("side-drawer").style.right ="0";
+      document.getElementById("side-drawer-void").classList.add("d-block");
+      document.getElementById("side-drawer-void").classList.remove("d-none");
+    }
+    function closeSideDrawer() {
+      document.getElementById("side-drawer").style.right ="-336px";
+      document.getElementById("side-drawer-void").classList.add("d-none");
+      document.getElementById("side-drawer-void").classList.remove("d-block");
     }
   </script>

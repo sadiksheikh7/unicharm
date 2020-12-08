@@ -202,7 +202,7 @@
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">
+                  <a class="nav-link" href="products.php">
                     <span class="menu-title">Products</span>
                   </a>
                 </li>

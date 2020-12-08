@@ -1,44 +1,58 @@
 <!-- header -->
   <?php include 'header.php';?>
+  <style>
+    .text-gray-300 {color: #dddfeb!important;}
+    .text-gray-800 {color: #5a5c69!important;}
+    .font-weight-bold {font-weight: 700!important;}
+    .text-md{font-size:1.5rem;}
+    .border-left-primary {border-left: .25rem solid #4e73df!important;}
+    .border-left-success {border-left: .25rem solid #1cc88a!important;}
+    .border-left-warning {border-left: .25rem solid #f6c23e!important;}
+  </style>
   <!-- partial -->
     <div class="row">
       <div class="col-lg-4">
-        <div class="card mb-3">
+        <div class="card mb-3 border-left-primary py-2">
           <div class="card-body">
-            <div class="box-wrap">
-              <div class="number">
-                <h3 class="text-muted">450</h3>
+            <div class="row no-gutters align-items-center">
+              <div class="col mr-2">
+                <div class="text-md font-weight-bold text-gray-800 mb-1">450</div>
+                <div class="font-weight-bold text-uppercase mb-0">Total no. of Retailers</div>
               </div>
-              <div class="content">
-                <h5 class=""><b>Total no. of Retailers</b></h5>
+              <div class="col-auto">
+                <i class="fa fa-users fa-2x text-gray-300"></i>
               </div>
             </div>
           </div>
         </div>
       </div>
       <div class="col-lg-4">
-        <div class="card mb-3">
+        <div class="card mb-3 border-left-success py-2">
           <div class="card-body">
-            <div class="box-wrap">
-              <div class="number">
-                <h3 class="text-muted">225</h3>
+            <div class="row no-gutters align-items-center">
+              <div class="col mr-2">
+                <div class="text-md font-weight-bold text-gray-800 mb-1">275</div>
+                <div class="font-weight-bold text-uppercase mb-0">Total no. of Active Retailers</div>
               </div>
-              <div class="content">
-                <h5 class=""><b>Total no. of Active Retailers</b></h5>
+              <div class="col-auto">
+                <i class="fa fa-user-plus fa-2x text-gray-300"></i>
               </div>
             </div>
           </div>
         </div>
       </div>
       <div class="col-lg-4">
-        <div class="card mb-3">
+        <div class="card mb-3 border-left-warning py-2">
           <div class="card-body">
-            <div class="number">
-                <h3 class="text-muted">105</h3>
+            <div class="row no-gutters align-items-center">
+              <div class="col mr-2">
+                <div class="text-md font-weight-bold text-gray-800 mb-1">175</div>
+                <div class="font-weight-bold text-uppercase mb-0">Total no. of Inactive Retailers</div>
               </div>
-              <div class="content">
-                <h5 class=""><b>Total no. of inactive Retailers</b></h5>
+              <div class="col-auto">
+                <i class="fa fa-user-times fa-2x text-gray-300"></i>
               </div>
+            </div>
           </div>
         </div>
       </div>
