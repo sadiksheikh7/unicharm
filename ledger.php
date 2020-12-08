@@ -1,5 +1,9 @@
 <!-- header -->
-  <?php include 'header.php';?>
+<?php 
+  $title = 'Purchases A/C';
+    include 'header.php';
+?>
+  
 
   
 

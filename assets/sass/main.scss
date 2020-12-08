@@ -374,7 +374,11 @@ $white: #fff;
 // modal css
 
 // modal css
-
+.Table-Header tr th {
+    vertical-align: middle !important;
+    border-right: 1px solid #dee2e6;
+    border-top: 1px solid #dee2e6 !important;
+}
 
 .input-search-date {
 	width: 200px;
@@ -1300,8 +1304,7 @@ $white: #fff;
 		}
 		.nav-item.active {
 			>.nav-link {
-				color: $white;
-				background: $blue !important;
+				color: #01a9f4;
 				.menu-title {
 					color: inherit;
 				}
@@ -3190,8 +3193,8 @@ mark {
 		vertical-align: middle;
 		font-size: 0.875rem;
 		line-height: 1;
-		white-space: nowrap;
-		height: 35px;
+		/*white-space: nowrap;
+		height: 35px;*/
 		padding: 12px 15px;
 		img {
 			&:not(.thumb-image) {

@@ -1,5 +1,9 @@
 <!-- header -->
-  <?php include 'header.php';?>
+  <?php 
+    $title = 'Add Retailer';
+      include 'header.php';
+  ?>
+  
   <style>
     .cancel-btn{padding:6px 12px;}
   </style>

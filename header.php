@@ -121,8 +121,8 @@
             <li class="clearfix">
                 <ul class="m-0 list-none mb-3">
                   <h5 class="nav-title">Retailer Management</h5>
-                  <li class="nav-item">
-                    <a class="nav-link" href="retailers.php">
+                  <li class="nav-item <?= (@$title != "")?"active":""; ?>">
+                    <a class="nav-link" href="retailers.php">	
                       <span class="menu-title">Retailers</span>
                     </a>
                   </li>
@@ -147,13 +147,13 @@
                       <span class="menu-title">Purchases A/C</span>
                     </a>
                   </li>
-                  <li class="nav-item">
+                  <!-- <li class="nav-item">
                     <a class="nav-link" href="javascript:void(0)">
                       <span class="menu-title">Purchase Order</span>
                     </a>
-                  </li>
+                  </li> -->
                   <li class="nav-item">
-                    <a class="nav-link" href="javascript:void(0)">
+                    <a class="nav-link" href="purchase-receipt.php">
                       <span class="menu-title">Purchase Receipt</span>
                     </a>
                   </li>
@@ -197,7 +197,7 @@
               <h5 class="nav-title">Menus</h5>
 
                 <li class="nav-item">
-                  <a class="nav-link" href="javascript:void(0)">
+                  <a class="nav-link" href="index.php">
                     <span class="menu-title">Dashboard</span>
                   </a>
                 </li>
@@ -307,6 +307,6 @@
       <h4 class="card-title mb-0"><span class="text-blue">Your 15 DAY Trial Plan ended on 23-08-2020. Apply to upgrade your subscription.</span></h4> <a href="javascript:void(0)"><i class="fa fa-times"></i></a>
     </div> -->
 
-    <div class="header-toggle d-flex align-items-center">
-     <a href="javascript:void(0)" class="toggle-bar"><i class="fa fa-bars"></i></a> <h4 class="card-title mb-0">Dashboard</a>
+    <div class="header-toggle d-flex align-items-center <?= (@$title == "showMore")?"d-none":""; ?>">
+     <a href="javascript:void(0)" class="toggle-bar"><i class="fa fa-bars"></i></a> <h4 class="card-title mb-0"><?= (@$title != "")?$title:"Dashboard"; ?></a>
     </div>
