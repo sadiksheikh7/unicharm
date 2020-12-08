@@ -1,412 +1,403 @@
 $(function () {
   /* ChartJS */
   'use strict';
-  // if ($("#mixed-chart").length) {
-  //   var chartData = {
-  //     labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
-  //     datasets: [{
-  //       type: 'line',
-  //       label: 'Revenue',
-  //       data: ["23", "33", "32", "65", "21", "45", "35"],
-  //       backgroundColor: ChartColor[2],
-  //       borderColor: ChartColor[2],
-  //       borderWidth: 3,
-  //       fill: false,
-  //     }, {
-  //       type: 'bar',
-  //       label: 'Standard',
-  //       data: ["53", "28", "19", "29", "30", "51", "55"],
-  //       backgroundColor: ChartColor[0],
-  //       borderColor: ChartColor[0],
-  //       borderWidth: 2
-  //     }, {
-  //       type: 'bar',
-  //       label: 'Extended',
-  //       data: ["34", "16", "46", "54", "42", "31", "49"],
-  //       backgroundColor: ChartColor[1],
-  //       borderColor: ChartColor[1]
-  //     }]
-  //   };
-  //   var MixedChartCanvas = document.getElementById('mixed-chart').getContext('2d');
-  //   lineChart = new Chart(MixedChartCanvas, {
-  //     type: 'bar',
-  //     data: chartData,
-  //     options: {
-  //       responsive: true,
-  //       title: {
-  //         display: true,
-  //         text: 'Revenue and number of lincences sold'
-  //       },
-  //       scales: {
-  //         xAxes: [{
-  //           display: true,
-  //           ticks: {
-  //             fontColor: '#212229',
-  //             stepSize: 50,
-  //             min: 0,
-  //             max: 150,
-  //             autoSkip: true,
-  //             autoSkipPadding: 15,
-  //             maxRotation: 0,
-  //             maxTicksLimit: 10
-  //           },
-  //           gridLines: {
-  //             display: false,
-  //             drawBorder: false,
-  //             color: 'transparent',
-  //             zeroLineColor: '#eeeeee'
-  //           }
-  //         }],
-  //         yAxes: [{
-  //           display: true,
-  //           scaleLabel: {
-  //             display: true,
-  //             labelString: 'Number of Sales',
-  //             fontSize: 12,
-  //             lineHeight: 2
-  //           },
-  //           ticks: {
-  //             fontColor: '#212229',
-  //             display: true,
-  //             autoSkip: false,
-  //             maxRotation: 0,
-  //             stepSize: 20,
-  //             min: 0,
-  //             max: 100
-  //           },
-  //           gridLines: {
-  //             drawBorder: false
-  //           }
-  //         }]
-  //       },
-  //       legend: {
-  //         display: false
-  //       },
-  //       legendCallback: function (chart) {
-  //         var text = [];
-  //         text.push('<div class="chartjs-legend d-flex justify-content-center mt-4"><ul>');
-  //         for (var i = 0; i < chart.data.datasets.length; i++) {
-  //           console.log(chart.data.datasets[i]); // see what's inside the obj.
-  //           text.push('<li>');
-  //           text.push('<span style="background-color:' + chart.data.datasets[i].borderColor + '">' + '</span>');
-  //           text.push(chart.data.datasets[i].label);
-  //           text.push('</li>');
-  //         }
-  //         text.push('</ul></div>');
-  //         return text.join("");
-  //       }
-  //     }
-  //   });
-  //   document.getElementById('mixed-chart-legend').innerHTML = lineChart.generateLegend();
-  // }
-  
-
-  // if ($("#lineChart").length) {
-  //   var lineData = {
-  //     labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep"],
-  //     datasets: [{
-  //       data: [0, 205, 75, 150, 100, 150, 50, 100, 80],
-  //       backgroundColor: ChartColor[0],
-  //       borderColor: ChartColor[0],
-  //       borderWidth: 3,
-  //       fill: 'false',
-  //       label: "Sales"
-  //     }]
-  //   };
-  //   var lineOptions = {
-  //     responsive: true,
-  //     maintainAspectRatio: true,
-  //     plugins: {
-  //       filler: {
-  //         propagate: false
-  //       }
-  //     },
-  //     scales: {
-  //       xAxes: [{
-  //         display: true,
-  //         scaleLabel: {
-  //           display: true,
-  //           labelString: 'Month',
-  //           fontSize: 12,
-  //           lineHeight: 2
-  //         },
-  //         ticks: {
-  //           fontColor: '#212229',
-  //           stepSize: 50,
-  //           min: 0,
-  //           max: 150,
-  //           autoSkip: true,
-  //           autoSkipPadding: 15,
-  //           maxRotation: 0,
-  //           maxTicksLimit: 10
-  //         },
-  //         gridLines: {
-  //           display: false,
-  //           drawBorder: false,
-  //           color: 'transparent',
-  //           zeroLineColor: '#eeeeee'
-  //         }
-  //       }],
-  //       yAxes: [{
-  //         display: true,
-  //         scaleLabel: {
-  //           display: true,
-  //           labelString: 'Number of sales',
-  //           fontSize: 12,
-  //           lineHeight: 2
-  //         },
-  //         ticks: {
-  //           fontColor: '#212229',
-  //           display: true,
-  //           autoSkip: false,
-  //           maxRotation: 0,
-  //           stepSize: 100,
-  //           min: 0,
-  //           max: 300
-  //         },
-  //         gridLines: {
-  //           drawBorder: false
-  //         }
-  //       }]
-  //     },
-  //     legend: {
-  //       display: false
-  //     },
-  //     legendCallback: function (chart) {
-  //       var text = [];
-  //       text.push('<div class="chartjs-legend"><ul>');
-  //       for (var i = 0; i < chart.data.datasets.length; i++) {
-  //         console.log(chart.data.datasets[i]); // see what's inside the obj.
-  //         text.push('<li>');
-  //         text.push('<span style="background-color:' + chart.data.datasets[i].borderColor + '">' + '</span>');
-  //         text.push(chart.data.datasets[i].label);
-  //         text.push('</li>');
-  //       }
-  //       text.push('</ul></div>');
-  //       return text.join("");
-  //     },
-  //     elements: {
-  //       line: {
-  //         tension: 0
-  //       },
-  //       point: {
-  //         radius: 0
-  //       }
-  //     }
-  //   }
-  //   var lineChartCanvas = $("#lineChart").get(0).getContext("2d");
-  //   var lineChart = new Chart(lineChartCanvas, {
-  //     type: 'line',
-  //     data: lineData,
-  //     options: lineOptions
-  //   });
-  //   document.getElementById('line-traffic-legend').innerHTML = lineChart.generateLegend();
-  // }
-
-
-  // if ($("#areaChart").length) {
-  //   var gradientStrokeFill_1 = lineChartCanvas.createLinearGradient(1, 2, 1, 280);
-  //   gradientStrokeFill_1.addColorStop(0, "rgba(20, 88, 232, 0.37)");
-  //   gradientStrokeFill_1.addColorStop(1, "rgba(255,255,255,0.4)")
-  //   var lineData = {
-  //     labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep"],
-  //     datasets: [{
-  //       data: [0, 205, 75, 150, 100, 150, 50, 100, 80],
-  //       backgroundColor: gradientStrokeFill_1,
-  //       borderColor: ChartColor[0],
-  //       borderWidth: 3,
-  //       fill: true,
-  //       label: "Marketing"
-  //     }]
-  //   };
-  //   var lineOptions = {
-  //     responsive: true,
-  //     maintainAspectRatio: true,
-  //     plugins: {
-  //       filler: {
-  //         propagate: false
-  //       }
-  //     },
-  //     scales: {
-  //       xAxes: [{
-  //         display: true,
-  //         scaleLabel: {
-  //           display: true,
-  //           labelString: 'Month',
-  //           fontSize: 12,
-  //           lineHeight: 2
-  //         },
-  //         ticks: {
-  //           autoSkip: true,
-  //           autoSkipPadding: 35,
-  //           maxRotation: 0,
-  //           maxTicksLimit: 10,
-  //           fontColor: '#212229'
-  //         },
-  //         gridLines: {
-  //           display: false,
-  //           drawBorder: false,
-  //           color: 'transparent',
-  //           zeroLineColor: '#eeeeee'
-  //         }
-  //       }],
-  //       yAxes: [{
-  //         display: true,
-  //         scaleLabel: {
-  //           display: true,
-  //           labelString: 'Number of user',
-  //           fontSize: 12,
-  //           lineHeight: 2
-  //         },
-  //         ticks: {
-  //           display: true,
-  //           autoSkip: false,
-  //           maxRotation: 0,
-  //           stepSize: 100,
-  //           min: 0,
-  //           max: 300
-  //         },
-  //         gridLines: {
-  //           drawBorder: false
-  //         }
-  //       }]
-  //     },
-  //     legend: {
-  //       display: false
-  //     },
-  //     legendCallback: function (chart) {
-  //       var text = [];
-  //       text.push('<div class="chartjs-legend"><ul>');
-  //       for (var i = 0; i < chart.data.datasets.length; i++) {
-  //         console.log(chart.data.datasets[i]); // see what's inside the obj.
-  //         text.push('<li>');
-  //         text.push('<span style="background-color:' + chart.data.datasets[i].borderColor + '">' + '</span>');
-  //         text.push(chart.data.datasets[i].label);
-  //         text.push('</li>');
-  //       }
-  //       text.push('</ul></div>');
-  //       return text.join("");
-  //     },
-  //     elements: {
-  //       line: {
-  //         tension: 0
-  //       },
-  //       point: {
-  //         radius: 0
-  //       }
-  //     }
-  //   }
-  //   var lineChartCanvas = $("#areaChart").get(0).getContext("2d");
-  //   var lineChart = new Chart(lineChartCanvas, {
-  //     type: 'line',
-  //     data: lineData,
-  //     options: lineOptions
-  //   });
-  //   document.getElementById('area-traffic-legend').innerHTML = lineChart.generateLegend();
-  // }
-
-
-
-  // if ($("#barChart").length) {
-  //   var barChartCanvas = $("#barChart").get(0).getContext("2d");
-  //   var barChart = new Chart(barChartCanvas, {
-  //     type: 'bar',
-  //     data: {
-  //       labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
-  //       datasets: [{
-  //         label: 'Profit',
-  //         data: [15, 28, 14, 22, 38, 30, 40, 70, 85, 50, 23, 20],
-  //         backgroundColor: ChartColor[0],
-  //         borderColor: ChartColor[0],
-  //         borderWidth: 0
-  //       }]
-  //     },
-  //     options: {
-  //       responsive: true,
-  //       maintainAspectRatio: true,
-  //       layout: {
-  //         padding: {
-  //           left: 0,
-  //           right: 0,
-  //           top: 0,
-  //           bottom: 0
-  //         }
-  //       },
-  //       scales: {
-  //         xAxes: [{
-  //           display: true,
-  //           scaleLabel: {
-  //             display: true,
-  //             labelString: 'Sales by year',
-  //             fontSize: 12,
-  //             lineHeight: 2
-  //           },
-  //           ticks: {
-  //             fontColor: '#bfccda',
-  //             stepSize: 50,
-  //             min: 0,
-  //             max: 150,
-  //             autoSkip: true,
-  //             autoSkipPadding: 15,
-  //             maxRotation: 0,
-  //             maxTicksLimit: 10
-  //           },
-  //           gridLines: {
-  //             display: false,
-  //             drawBorder: false,
-  //             color: 'transparent',
-  //             zeroLineColor: '#eeeeee'
-  //           }
-  //         }],
-  //         yAxes: [{
-  //           display: true,
-  //           scaleLabel: {
-  //             display: true,
-  //             labelString: 'revenue by sales',
-  //             fontSize: 12,
-  //             lineHeight: 2
-  //           },
-  //           ticks: {
-  //             display: true,
-  //             autoSkip: false,
-  //             maxRotation: 0,
-  //             fontColor: '#bfccda',
-  //             stepSize: 50,
-  //             min: 0,
-  //             max: 150
-  //           },
-  //           gridLines: {
-  //             drawBorder: false
-  //           }
-  //         }]
-  //       },
-  //       legend: {
-  //         display: false
-  //       },
-  //       legendCallback: function (chart) {
-  //         var text = [];
-  //         text.push('<div class="chartjs-legend"><ul>');
-  //         for (var i = 0; i < chart.data.datasets.length; i++) {
-  //           console.log(chart.data.datasets[i]); // see what's inside the obj.
-  //           text.push('<li>');
-  //           text.push('<span style="background-color:' + chart.data.datasets[i].backgroundColor + '">' + '</span>');
-  //           text.push(chart.data.datasets[i].label);
-  //           text.push('</li>');
-  //         }
-  //         text.push('</ul></div>');
-  //         return text.join("");
-  //       },
-  //       elements: {
-  //         point: {
-  //           radius: 0
-  //         }
-  //       }
-  //     }
-  //   });
-  //   document.getElementById('bar-traffic-legend').innerHTML = barChart.generateLegend();
-  // }
-
-
+  if ($("#mixed-chart").length) {
+    var chartData = {
+      labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+      datasets: [{
+        type: 'line',
+        label: 'Revenue',
+        data: ["23", "33", "32", "65", "21", "45", "35"],
+        backgroundColor: ChartColor[2],
+        borderColor: ChartColor[2],
+        borderWidth: 3,
+        fill: false,
+      }, {
+        type: 'bar',
+        label: 'Standard',
+        data: ["53", "28", "19", "29", "30", "51", "55"],
+        backgroundColor: ChartColor[0],
+        borderColor: ChartColor[0],
+        borderWidth: 2
+      }, {
+        type: 'bar',
+        label: 'Extended',
+        data: ["34", "16", "46", "54", "42", "31", "49"],
+        backgroundColor: ChartColor[1],
+        borderColor: ChartColor[1]
+      }]
+    };
+    var MixedChartCanvas = document.getElementById('mixed-chart').getContext('2d');
+    lineChart = new Chart(MixedChartCanvas, {
+      type: 'bar',
+      data: chartData,
+      options: {
+        responsive: true,
+        title: {
+          display: true,
+          text: 'Revenue and number of lincences sold'
+        },
+        scales: {
+          xAxes: [{
+            display: true,
+            ticks: {
+              fontColor: '#212229',
+              stepSize: 50,
+              min: 0,
+              max: 150,
+              autoSkip: true,
+              autoSkipPadding: 15,
+              maxRotation: 0,
+              maxTicksLimit: 10
+            },
+            gridLines: {
+              display: false,
+              drawBorder: false,
+              color: 'transparent',
+              zeroLineColor: '#eeeeee'
+            }
+          }],
+          yAxes: [{
+            display: true,
+            scaleLabel: {
+              display: true,
+              labelString: 'Number of Sales',
+              fontSize: 12,
+              lineHeight: 2
+            },
+            ticks: {
+              fontColor: '#212229',
+              display: true,
+              autoSkip: false,
+              maxRotation: 0,
+              stepSize: 20,
+              min: 0,
+              max: 100
+            },
+            gridLines: {
+              drawBorder: false
+            }
+          }]
+        },
+        legend: {
+          display: false
+        },
+        legendCallback: function (chart) {
+          var text = [];
+          text.push('<div class="chartjs-legend d-flex justify-content-center mt-4"><ul>');
+          for (var i = 0; i < chart.data.datasets.length; i++) {
+            console.log(chart.data.datasets[i]); // see what's inside the obj.
+            text.push('<li>');
+            text.push('<span style="background-color:' + chart.data.datasets[i].borderColor + '">' + '</span>');
+            text.push(chart.data.datasets[i].label);
+            text.push('</li>');
+          }
+          text.push('</ul></div>');
+          return text.join("");
+        }
+      }
+    });
+    document.getElementById('mixed-chart-legend').innerHTML = lineChart.generateLegend();
+  }
+  if ($("#lineChart").length) {
+    var lineData = {
+      labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep"],
+      datasets: [{
+        data: [0, 205, 75, 150, 100, 150, 50, 100, 80],
+        backgroundColor: ChartColor[0],
+        borderColor: ChartColor[0],
+        borderWidth: 3,
+        fill: 'false',
+        label: ["Sales"]
+      }]
+    };
+    var lineOptions = {
+      responsive: true,
+      maintainAspectRatio: true,
+      plugins: {
+        filler: {
+          propagate: false
+        }
+      },
+      scales: {
+        xAxes: [{
+          display: true,
+          scaleLabel: {
+            display: true,
+            labelString: 'Month',
+            fontSize: 12,
+            lineHeight: 2
+          },
+          ticks: {
+            fontColor: '#212229',
+            stepSize: 50,
+            min: 0,
+            max: 150,
+            autoSkip: true,
+            autoSkipPadding: 15,
+            maxRotation: 0,
+            maxTicksLimit: 10
+          },
+          gridLines: {
+            display: false,
+            drawBorder: false,
+            color: 'transparent',
+            zeroLineColor: '#eeeeee'
+          }
+        }],
+        yAxes: [{
+          display: true,
+          scaleLabel: {
+            display: true,
+            labelString: 'Number of sales',
+            fontSize: 12,
+            lineHeight: 2
+          },
+          ticks: {
+            fontColor: '#212229',
+            display: true,
+            autoSkip: false,
+            maxRotation: 0,
+            stepSize: 100,
+            min: 0,
+            max: 300
+          },
+          gridLines: {
+            drawBorder: false
+          }
+        }]
+      },
+      legend: {
+        display: false
+      },
+      legendCallback: function (chart) {
+        var text = [];
+        text.push('<div class="chartjs-legend"><ul>');
+        for (var i = 0; i < chart.data.datasets.length; i++) {
+          console.log(chart.data.datasets[i]); // see what's inside the obj.
+          text.push('<li>');
+          text.push('<span style="background-color:' + chart.data.datasets[i].borderColor + '">' + '</span>');
+          text.push(chart.data.datasets[i].label);
+          text.push('</li>');
+        }
+        text.push('</ul></div>');
+        return text.join("");
+      },
+      elements: {
+        line: {
+          tension: 0
+        },
+        point: {
+          radius: 0
+        }
+      }
+    }
+    var lineChartCanvas = $("#lineChart").get(0).getContext("2d");
+    var lineChart = new Chart(lineChartCanvas, {
+      type: 'line',
+      data: lineData,
+      options: lineOptions
+    });
+    document.getElementById('line-traffic-legend').innerHTML = lineChart.generateLegend();
+  }
+  if ($("#areaChart").length) {
+    var gradientStrokeFill_1 = lineChartCanvas.createLinearGradient(1, 2, 1, 280);
+    gradientStrokeFill_1.addColorStop(0, "rgba(20, 88, 232, 0.37)");
+    gradientStrokeFill_1.addColorStop(1, "rgba(255,255,255,0.4)")
+    var lineData = {
+      labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep"],
+      datasets: [{
+        data: [0, 205, 75, 150, 100, 150, 50, 100, 80],
+        backgroundColor: gradientStrokeFill_1,
+        borderColor: ChartColor[0],
+        borderWidth: 3,
+        fill: true,
+        label: "Marketing"
+      }]
+    };
+    var lineOptions = {
+      responsive: true,
+      maintainAspectRatio: true,
+      plugins: {
+        filler: {
+          propagate: false
+        }
+      },
+      scales: {
+        xAxes: [{
+          display: true,
+          scaleLabel: {
+            display: true,
+            labelString: 'Month',
+            fontSize: 12,
+            lineHeight: 2
+          },
+          ticks: {
+            autoSkip: true,
+            autoSkipPadding: 35,
+            maxRotation: 0,
+            maxTicksLimit: 10,
+            fontColor: '#212229'
+          },
+          gridLines: {
+            display: false,
+            drawBorder: false,
+            color: 'transparent',
+            zeroLineColor: '#eeeeee'
+          }
+        }],
+        yAxes: [{
+          display: true,
+          scaleLabel: {
+            display: true,
+            labelString: 'Number of user',
+            fontSize: 12,
+            lineHeight: 2
+          },
+          ticks: {
+            display: true,
+            autoSkip: false,
+            maxRotation: 0,
+            stepSize: 100,
+            min: 0,
+            max: 300
+          },
+          gridLines: {
+            drawBorder: false
+          }
+        }]
+      },
+      legend: {
+        display: false
+      },
+      legendCallback: function (chart) {
+        var text = [];
+        text.push('<div class="chartjs-legend"><ul>');
+        for (var i = 0; i < chart.data.datasets.length; i++) {
+          console.log(chart.data.datasets[i]); // see what's inside the obj.
+          text.push('<li>');
+          text.push('<span style="background-color:' + chart.data.datasets[i].borderColor + '">' + '</span>');
+          text.push(chart.data.datasets[i].label);
+          text.push('</li>');
+        }
+        text.push('</ul></div>');
+        return text.join("");
+      },
+      elements: {
+        line: {
+          tension: 0
+        },
+        point: {
+          radius: 0
+        }
+      }
+    }
+    var lineChartCanvas = $("#areaChart").get(0).getContext("2d");
+    var lineChart = new Chart(lineChartCanvas, {
+      type: 'line',
+      data: lineData,
+      options: lineOptions
+    });
+    document.getElementById('area-traffic-legend').innerHTML = lineChart.generateLegend();
+  }
+  if ($("#barChart").length) {
+    var barChartCanvas = $("#barChart").get(0).getContext("2d");
+    var barChart = new Chart(barChartCanvas, {
+      type: 'bar',
+      data: {
+        labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+        datasets: [{
+          label: 'Profit',
+          data: [15, 28, 14, 22, 38, 30, 40, 70, 85, 50, 23, 20],
+          backgroundColor: ChartColor[0],
+          borderColor: ChartColor[0],
+          borderWidth: 0
+        }]
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: true,
+        layout: {
+          padding: {
+            left: 0,
+            right: 0,
+            top: 0,
+            bottom: 0
+          }
+        },
+        scales: {
+          xAxes: [{
+            display: true,
+            scaleLabel: {
+              display: true,
+              labelString: 'Sales by year',
+              fontSize: 12,
+              lineHeight: 2
+            },
+            ticks: {
+              fontColor: '#bfccda',
+              stepSize: 50,
+              min: 0,
+              max: 150,
+              autoSkip: true,
+              autoSkipPadding: 15,
+              maxRotation: 0,
+              maxTicksLimit: 10
+            },
+            gridLines: {
+              display: false,
+              drawBorder: false,
+              color: 'transparent',
+              zeroLineColor: '#eeeeee'
+            }
+          }],
+          yAxes: [{
+            display: true,
+            scaleLabel: {
+              display: true,
+              labelString: 'revenue by sales',
+              fontSize: 12,
+              lineHeight: 2
+            },
+            ticks: {
+              display: true,
+              autoSkip: false,
+              maxRotation: 0,
+              fontColor: '#bfccda',
+              stepSize: 50,
+              min: 0,
+              max: 150
+            },
+            gridLines: {
+              drawBorder: false
+            }
+          }]
+        },
+        legend: {
+          display: false
+        },
+        legendCallback: function (chart) {
+          var text = [];
+          text.push('<div class="chartjs-legend"><ul>');
+          for (var i = 0; i < chart.data.datasets.length; i++) {
+            console.log(chart.data.datasets[i]); // see what's inside the obj.
+            text.push('<li>');
+            text.push('<span style="background-color:' + chart.data.datasets[i].backgroundColor + '">' + '</span>');
+            text.push(chart.data.datasets[i].label);
+            text.push('</li>');
+          }
+          text.push('</ul></div>');
+          return text.join("");
+        },
+        elements: {
+          point: {
+            radius: 0
+          }
+        }
+      }
+    });
+    document.getElementById('bar-traffic-legend').innerHTML = barChart.generateLegend();
+  }
   if ($("#stackedbarChart").length) {
     var stackedbarChartCanvas = $("#stackedbarChart").get(0).getContext("2d");
     var stackedbarChart = new Chart(stackedbarChartCanvas, {
@@ -591,21 +582,18 @@ $(function () {
         data: [20, 80, 83],
         backgroundColor: [
           ChartColor[0],
-          ChartColor[1],
-          ChartColor[2]
+          ChartColor[1]
         ],
         borderColor: [
           ChartColor[0],
           ChartColor[1],
-          ChartColor[2]
         ],
       }],
 
       // These labels appear in the legend and in the tooltips when hovering different arcs
       labels: [
-        'Sales',
-        'Profit',
-        'Return',
+        'Invoices',
+        'Total Purchase'
       ]
     };
     var doughnutPieOptions = {

@@ -1,10 +1,5 @@
 <!-- header -->
   <?php include 'header.php';?>
-  <style>
-    .table-droppy{
-      display:none;
-    }
-  </style>
   <!-- partial -->
     <div class="row">
       <div class="col-lg-4">
@@ -69,15 +64,19 @@
                 <tbody>
                   <tr>
                     <td class="first-column">
-                      <a href="javascript:void(0);" class="retailer-name">Netmeds</a>
+                      <a href="retailer-details.php" class="retailer-name">Netmeds</a>
                       <div class="dropdown float-right table-droppy">
                         <a role="button" type="button" data-toggle="dropdown">
                           <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
                         </a>
                         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                          <a class="dropdown-item" href="#">Action</a>
-                          <a class="dropdown-item" href="#">Another action</a>
-                          <a class="dropdown-item" href="#">Something else here</a>
+                          <a class="dropdown-item" href="javascript:void(0);">
+                            <span><b>AMIT BARFA</b></span>
+                            <i class="fa fa-edit float-right text-muted" aria-hidden="true"></i>
+                          </a>
+                          <a class="dropdown-item" href="javascript:void(0);">Go to Ledger</a>
+                          <a class="dropdown-item" href="javascript:void(0);">Send SMS</a>
+                          <a class="dropdown-item" href="javascript:void(0);">Send Email</a>
                         </div>
                       </div>
                     </td>
@@ -92,15 +91,19 @@
                   
                   <tr>
                     <td>
-                      <a href="javascript:void(0);" class="retailer-name">Medplus Mart</a>
-                      <div class="dropdown float-right">
+                      <a href="retailer-details.php" class="retailer-name">Medplus Mart</a>
+                      <div class="dropdown float-right table-droppy">
                         <a role="button" type="button" data-toggle="dropdown">
                           <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
                         </a>
                         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                          <a class="dropdown-item" href="#">Action</a>
-                          <a class="dropdown-item" href="#">Another action</a>
-                          <a class="dropdown-item" href="#">Something else here</a>
+                          <a class="dropdown-item" href="javascript:void(0);">
+                            <span><b>AMIT BARFA</b></span>
+                            <i class="fa fa-edit float-right text-muted" aria-hidden="true"></i>
+                          </a>
+                          <a class="dropdown-item" href="javascript:void(0);">Go to Ledger</a>
+                          <a class="dropdown-item" href="javascript:void(0);">Send SMS</a>
+                          <a class="dropdown-item" href="javascript:void(0);">Send Email</a>
                         </div>
                       </div>
                     </td>
@@ -115,15 +118,19 @@
                   
                   <tr>
                     <td>
-                      <a href="javascript:void(0);" class="retailer-name">MediDart</a>
-                      <div class="dropdown float-right">
+                      <a href="retailer-details.php" class="retailer-name">MediDart</a>
+                      <div class="dropdown float-right table-droppy">
                         <a role="button" type="button" data-toggle="dropdown">
                           <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
                         </a>
                         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                          <a class="dropdown-item" href="#">Action</a>
-                          <a class="dropdown-item" href="#">Another action</a>
-                          <a class="dropdown-item" href="#">Something else here</a>
+                          <a class="dropdown-item" href="javascript:void(0);">
+                            <span><b>AMIT BARFA</b></span>
+                            <i class="fa fa-edit float-right text-muted" aria-hidden="true"></i>
+                          </a>
+                          <a class="dropdown-item" href="javascript:void(0);">Go to Ledger</a>
+                          <a class="dropdown-item" href="javascript:void(0);">Send SMS</a>
+                          <a class="dropdown-item" href="javascript:void(0);">Send Email</a>
                         </div>
                       </div>
                     </td>
@@ -138,15 +145,19 @@
                   
                   <tr>
                     <td>
-                      <a href="javascript:void(0);" class="retailer-name">BuyDrug</a>
-                      <div class="dropdown float-right">
+                      <a href="retailer-details.php" class="retailer-name">BuyDrug</a>
+                      <div class="dropdown float-right table-droppy">
                         <a role="button" type="button" data-toggle="dropdown">
                           <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
                         </a>
                         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                          <a class="dropdown-item" href="#">Action</a>
-                          <a class="dropdown-item" href="#">Another action</a>
-                          <a class="dropdown-item" href="#">Something else here</a>
+                          <a class="dropdown-item" href="javascript:void(0);">
+                            <span><b>AMIT BARFA</b></span>
+                            <i class="fa fa-edit float-right text-muted" aria-hidden="true"></i>
+                          </a>
+                          <a class="dropdown-item" href="javascript:void(0);">Go to Ledger</a>
+                          <a class="dropdown-item" href="javascript:void(0);">Send SMS</a>
+                          <a class="dropdown-item" href="javascript:void(0);">Send Email</a>
                         </div>
                       </div>
                     </td>
@@ -161,15 +172,19 @@
                   
                   <tr>
                     <td>
-                      <a href="javascript:void(0);" class="retailer-name">Zigy</a>
-                      <div class="dropdown float-right">
+                      <a href="retailer-details.php" class="retailer-name">Zigy</a>
+                      <div class="dropdown float-right table-droppy">
                         <a role="button" type="button" data-toggle="dropdown">
                           <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
                         </a>
                         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                          <a class="dropdown-item" href="#">Action</a>
-                          <a class="dropdown-item" href="#">Another action</a>
-                          <a class="dropdown-item" href="#">Something else here</a>
+                          <a class="dropdown-item" href="javascript:void(0);">
+                            <span><b>AMIT BARFA</b></span>
+                            <i class="fa fa-edit float-right text-muted" aria-hidden="true"></i>
+                          </a>
+                          <a class="dropdown-item" href="javascript:void(0);">Go to Ledger</a>
+                          <a class="dropdown-item" href="javascript:void(0);">Send SMS</a>
+                          <a class="dropdown-item" href="javascript:void(0);">Send Email</a>
                         </div>
                       </div>
                     </td>
@@ -184,17 +199,21 @@
                   
                   <tr>
                     <td>
-                      <a href="javascript:void(0);" class="retailer-name">mChemist</a>
-                      <div class="dropdown float-right">
+                      <a href="retailer-details.php" class="retailer-name">mChemist</a>
+                      <div class="dropdown float-right table-droppy">
                         <a role="button" type="button" data-toggle="dropdown">
                           <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
                         </a>
                         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                          <a class="dropdown-item" href="#">Action</a>
-                          <a class="dropdown-item" href="#">Another action</a>
-                          <a class="dropdown-item" href="#">Something else here</a>
+                          <a class="dropdown-item" href="javascript:void(0);">
+                            <span><b>AMIT BARFA</b></span>
+                            <i class="fa fa-edit float-right text-muted" aria-hidden="true"></i>
+                          </a>
+                          <a class="dropdown-item" href="javascript:void(0);">Go to Ledger</a>
+                          <a class="dropdown-item" href="javascript:void(0);">Send SMS</a>
+                          <a class="dropdown-item" href="javascript:void(0);">Send Email</a>
                         </div>
-                      </div> 
+                      </div>
                     </td>
                     <td>+91-855-5903-050</td>
                     <td>mchem@gmail.com</td>
@@ -207,17 +226,21 @@
                   
                   <tr>
                     <td>
-                      <a href="javascript:void(0);" class="retailer-name">Mera Pharmacy</a>
-                      <div class="dropdown float-right">
+                      <a href="retailer-details.php" class="retailer-name">Mera Pharmacy</a>
+                      <div class="dropdown float-right table-droppy">
                         <a role="button" type="button" data-toggle="dropdown">
                           <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
                         </a>
                         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                          <a class="dropdown-item" href="#">Action</a>
-                          <a class="dropdown-item" href="#">Another action</a>
-                          <a class="dropdown-item" href="#">Something else here</a>
+                          <a class="dropdown-item" href="javascript:void(0);">
+                            <span><b>AMIT BARFA</b></span>
+                            <i class="fa fa-edit float-right text-muted" aria-hidden="true"></i>
+                          </a>
+                          <a class="dropdown-item" href="javascript:void(0);">Go to Ledger</a>
+                          <a class="dropdown-item" href="javascript:void(0);">Send SMS</a>
+                          <a class="dropdown-item" href="javascript:void(0);">Send Email</a>
                         </div>
-                      </div> 
+                      </div>
                     </td>
                     <td>+91-855-5772-100</td>
                     <td>merapharma@gmail.com</td>
