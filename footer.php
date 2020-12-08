@@ -20,7 +20,7 @@
 
 
 <!-- Modal -->
-<div class="modal fade custom-modal modal-profile show" id="AccountSetting" tabindex="-1" aria-labelledby="AccountSettingLabel" aria-hidden="true">
+<div class="modal custom-modal modal-profile" id="AccountSetting" tabindex="-1" aria-labelledby="AccountSettingLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content border-none">
       <div class="modal-header">
@@ -442,10 +442,7 @@
                     </div>
                   </div>
                   <!-- row end -->
-
-
                 </div>
-
               </div>
 
             </div>
@@ -484,7 +481,7 @@
 <script src="assets/js/shared/data-table/buttons.html5.min.js"></script>
 <script src="assets/js/shared/data-table/buttons.print.min.js"></script>
  data table js end -->
-<!-- <script src="assets/js/shared/date-picker/bootstrap-datepicker.min.js"></script>
+<!-- 
 <script src="assets/js/shared/custom.js"></script> -->
 
 <script type="text/javascript" src="assets/js/vendor/jquery.min.js"></script>
@@ -495,6 +492,8 @@
 <!-- chart JS -->
 <script type="text/javascript" src="assets/js/vendor/chart/Chart.min.js"></script>
 
+<!-- date picker -->
+<script src="assets/js/vendor/date-picker/bootstrap-datepicker.min.js"></script>
 
 <!--  -->
 <script src="assets/js/vendor/chart/vendor.bundle.base.js"></script>

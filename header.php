@@ -17,7 +17,7 @@
     <!-- data table start -->
 
     <!-- date picker -->
-    <!-- <link rel="stylesheet" href="assets/css/shared/date-picker/bootstrap-datepicker.min.css"> -->
+    <link rel="stylesheet" href="assets/css/vendor/date-picker/bootstrap-datepicker.min.css">
 
     <link rel="shortcut icon" href="assets/images/logo.png" />
   </head>
