@@ -10,5 +10,14 @@
   "license": "ISC",
   "devDependencies": {
     "node-sass": "^5.0.0"
-  }
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sadiksheikh7/unicharm.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sadiksheikh7/unicharm/issues"
+  },
+  "homepage": "https://github.com/sadiksheikh7/unicharm#readme"
 }
