@@ -20,7 +20,7 @@
 
 
 <!-- Modal -->
-<div class="modal fade custom-modal modal-profile show" id="AccountSetting" tabindex="-1" aria-labelledby="AccountSettingLabel" aria-hidden="true">
+<div class="modal custom-modal modal-profile" id="AccountSetting" tabindex="-1" aria-labelledby="AccountSettingLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content border-none">
       <div class="modal-header">
@@ -384,7 +384,68 @@
               </div>
 
             </div>
-            <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">...</div>
+            <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+              
+              <div class="setting-tab-box">
+              <div class="setting-tab-box-edit">
+                  <a href="#" class="edit-profile-btn clickme"><i class="fa fa-pencil"></i></a>
+                  <div class="row mb-2">
+                    <div class="col-md-2">
+                      <label class="bold">Password</label>
+                    </div>
+                    <div class="col-md-3"></div>
+                    <div class="col-md-7 toggletag">
+                    </div>
+                  </div>
+                  <!-- row end -->
+
+                  <div class="row">
+                    <div class="col-md-2"></div>
+                    <div class="col-md-3">
+                      <label>Old password</label>
+                    </div>
+                    <div class="col-md-7">
+                      <input type="text" class="form-control mb-3" value="***********">
+                    </div>
+                  </div>
+                  <!-- row end -->
+
+                  <div class="row">
+                    <div class="col-md-2"></div>
+                    <div class="col-md-3">
+                      <label>New passwored</label>
+                    </div>
+                    <div class="col-md-7">
+                      <input type="text" class="form-control mb-3">
+                    </div>
+                  </div>
+                  <!-- row end -->
+
+                  <div class="row">
+                    <div class="col-md-2"></div>
+                    <div class="col-md-3">
+                      <label>Confirm password</label>
+                    </div>
+                    <div class="col-md-7">
+                      <input type="text" class="form-control mb-3">
+                    </div>
+                  </div>
+                  <!-- row end -->
+
+                  <div class="row">
+                    <div class="col-md-2"></div>
+                    <div class="col-md-3">
+                      <label><button type="button" class="btn custom-blue">Update password</button></label>
+                    </div>
+                    <div class="col-md-7">
+                      
+                    </div>
+                  </div>
+                  <!-- row end -->
+                </div>
+              </div>
+
+            </div>
             <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">...</div>
             <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">...</div>
           </div>
@@ -415,6 +476,8 @@
 <script type="text/javascript" src="assets/js/vendor/bootstrap.min.js"></script>
 <script type="text/javascript" src="assets/js/animate/wow.min.js"></script>
 
+<!-- date picker -->
+<script src="assets/js/vendor/date-picker/bootstrap-datepicker.min.js"></script>
 
 
   <!-- data table js start -->
