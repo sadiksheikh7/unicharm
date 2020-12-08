@@ -1,6 +1,6 @@
 <!-- header -->
 <?php 
-  $title = 'Purchases Receipt';
+  $title = 'Purchase Receipt';
     include 'header.php';
 ?>
 

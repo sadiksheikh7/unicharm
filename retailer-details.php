@@ -1,5 +1,8 @@
 <!-- header -->
-  <?php include 'header.php';?>
+  <?php 
+	  $title = 'Retailer Details';
+    include 'header.php';
+  ?>
   <style>
     .cancel-btn{padding:6px 12px;}
     #note-div{display:none;}

@@ -1,6 +1,6 @@
 <!-- header -->
 <?php 
-  $title = 'Product';
+  $title = 'Products';
     include 'header.php';
 ?>
 <style>
