@@ -174,15 +174,6 @@
               <li class="clearfix">
                 <ul class="m-0 list-none mb-3">
                   <h5 class="nav-title">Billing</h5>
-<<<<<<< HEAD
-                  <li class="nav-item">
-                    <a class="nav-link" href="invoice.php">
-                      <span class="menu-title">Invoices</span>
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="create-invoice.php">
-=======
                   <li class="nav-item <?= (@$title == "Invoices")?"active":""; ?>">
                     <a class="nav-link" href="javascript:void(0)">
                       <span class="menu-title">Invoices</span>
@@ -190,7 +181,6 @@
                   </li>
                   <li class="nav-item <?= (@$title == "Create Invoice")?"active":""; ?>">
                     <a class="nav-link" href="javascript:void(0)">
->>>>>>> ea867f6a6c2d7906ef057457f56a245f9ace6118
                       <span class="menu-title">Create Invoice</span>
                     </a>
                   </li>
