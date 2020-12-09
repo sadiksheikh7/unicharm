@@ -265,17 +265,6 @@
                     </td>
                   </tr>
                 </tbody>
-
-                <tfoot>
-                  <tr>
-                    <th>Scheduled: 09</th>
-                    <th></th>
-                    <th class="text-success">Deposited: 02</th>
-                    <th></th>
-                    <th>$ 10,800.00</th>
-                    <th class="text-success">$ 0.00</th>
-                  </tr>
-                </tfoot>
               </table>
             </div>
           </div>

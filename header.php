@@ -175,12 +175,12 @@
                 <ul class="m-0 list-none mb-3">
                   <h5 class="nav-title">Billing</h5>
                   <li class="nav-item">
-                    <a class="nav-link" href="javascript:void(0)">
+                    <a class="nav-link" href="invoice.php">
                       <span class="menu-title">Invoices</span>
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="javascript:void(0)">
+                    <a class="nav-link" href="create-invoice.php">
                       <span class="menu-title">Create Invoice</span>
                     </a>
                   </li>
