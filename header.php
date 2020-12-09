@@ -121,17 +121,17 @@
             <li class="clearfix">
                 <ul class="m-0 list-none mb-3">
                   <h5 class="nav-title">Retailer Management</h5>
-                  <li class="nav-item">
-                    <a class="nav-link" href="retailers.php">
+                  <li class="nav-item <?= (@$title == "Retailers")?"active":""; ?>">
+                    <a class="nav-link" href="retailers.php">	
                       <span class="menu-title">Retailers</span>
                     </a>
                   </li>
-                  <li class="nav-item">
+                  <li class="nav-item <?= (@$title == "Add Retailer")?"active":""; ?>">
                     <a class="nav-link" href="add-retailer.php">
                       <span class="menu-title">Add Retailer</span>
                     </a>
                   </li>
-                  <li class="nav-item">
+                  <li class="nav-item <?= (@$title == "Import Retailers")?"active":""; ?>">
                     <a class="nav-link" href="javascript:void(0)">
                       <span class="menu-title">Import Retailers</span>
                     </a>
@@ -142,27 +142,27 @@
               <li class="clearfix">
                 <ul class="m-0 list-none mb-3">
                   <h5 class="nav-title">Accounts</h5>
-                  <li class="nav-item">
+                  <li class="nav-item <?= (@$title == "Purchases A/C")?"active":""; ?>">
                     <a class="nav-link" href="ledger.php">
                       <span class="menu-title">Purchases A/C</span>
                     </a>
                   </li>
-                  <li class="nav-item">
+                  <!-- <li class="nav-item">
                     <a class="nav-link" href="javascript:void(0)">
                       <span class="menu-title">Purchase Order</span>
                     </a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="javascript:void(0)">
+                  </li> -->
+                  <li class="nav-item <?= (@$title == "Purchase Receipt")?"active":""; ?>">
+                    <a class="nav-link" href="purchase-receipt.php">
                       <span class="menu-title">Purchase Receipt</span>
                     </a>
                   </li>
-                  <li class="nav-item">
+                  <li class="nav-item <?= (@$title == "Purchase Payment")?"active":""; ?>">
                     <a class="nav-link" href="javascript:void(0)">
                       <span class="menu-title">Purchase Payment</span>
                     </a>
                   </li>
-                  <li class="nav-item">
+                  <li class="nav-item <?= (@$title == "Purchase Return")?"active":""; ?>">
                     <a class="nav-link" href="javascript:void(0)">
                       <span class="menu-title">Purchase Return</span>
                     </a>
@@ -174,6 +174,7 @@
               <li class="clearfix">
                 <ul class="m-0 list-none mb-3">
                   <h5 class="nav-title">Billing</h5>
+<<<<<<< HEAD
                   <li class="nav-item">
                     <a class="nav-link" href="invoice.php">
                       <span class="menu-title">Invoices</span>
@@ -181,10 +182,19 @@
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="create-invoice.php">
+=======
+                  <li class="nav-item <?= (@$title == "Invoices")?"active":""; ?>">
+                    <a class="nav-link" href="javascript:void(0)">
+                      <span class="menu-title">Invoices</span>
+                    </a>
+                  </li>
+                  <li class="nav-item <?= (@$title == "Create Invoice")?"active":""; ?>">
+                    <a class="nav-link" href="javascript:void(0)">
+>>>>>>> ea867f6a6c2d7906ef057457f56a245f9ace6118
                       <span class="menu-title">Create Invoice</span>
                     </a>
                   </li>
-                  <li class="nav-item">
+                  <li class="nav-item <?= (@$title == "Billing Setting")?"active":""; ?>">
                     <a class="nav-link" href="javascript:void(0)">
                       <span class="menu-title">Billing Setting</span>
                     </a>
@@ -196,57 +206,57 @@
               <ul class="m-0 list-none mb-3">
               <h5 class="nav-title">Menus</h5>
 
-                <li class="nav-item">
-                  <a class="nav-link" href="javascript:void(0)">
+                <li class="nav-item <?= (@$title == "Dashboard")?"active":""; ?>">
+                  <a class="nav-link" href="index.php">
                     <span class="menu-title">Dashboard</span>
                   </a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item <?= (@$title == "Products")?"active":""; ?>">
                   <a class="nav-link" href="products.php">
                     <span class="menu-title">Products</span>
                   </a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item <?= (@$title == "Inventory")?"active":""; ?>">
                   <a class="nav-link" href="javascript:void(0)">
                     <span class="menu-title">Inventory</span>
                   </a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item <?= (@$title == "Company")?"active":""; ?>">
                   <a class="nav-link" href="javascript:void(0)">
                     <span class="menu-title">Company</span>
                   </a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item <?= (@$title == "Manage User")?"active":""; ?>">
                   <a class="nav-link" href="javascript:void(0)">
                     <span class="menu-title">Manage User</span>
                   </a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item <?= (@$title == "Taxes")?"active":""; ?>">
                   <a class="nav-link" href="javascript:void(0)">
                     <span class="menu-title">Taxes</span>
                   </a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item <?= (@$title == "Financial Year")?"active":""; ?>">
                   <a class="nav-link" href="javascript:void(0)">
                     <span class="menu-title">Financial Year</span>
                   </a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item <?= (@$title == "Claim")?"active":""; ?>">
                   <a class="nav-link" href="javascript:void(0)">
                     <span class="menu-title">Claim</span>
                   </a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item <?= (@$title == "Settings")?"active":""; ?>">
                   <a class="nav-link" href="javascript:void(0)">
                     <span class="menu-title">Settings</span>
                   </a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item <?= (@$title == "Reports")?"active":""; ?>">
                   <a class="nav-link" href="javascript:void(0)">
                     <span class="menu-title">Reports</span>
                   </a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item <?= (@$title == "showMore")?"active":""; ?>">
                   <a class="nav-link" href="all-modules.php">
                     <span class="menu-title text-cyan bold">Show More..</span>
                   </a>
@@ -307,6 +317,6 @@
       <h4 class="card-title mb-0"><span class="text-blue">Your 15 DAY Trial Plan ended on 23-08-2020. Apply to upgrade your subscription.</span></h4> <a href="javascript:void(0)"><i class="fa fa-times"></i></a>
     </div> -->
 
-    <div class="header-toggle d-flex align-items-center">
-     <a href="javascript:void(0)" class="toggle-bar"><i class="fa fa-bars"></i></a> <h4 class="card-title mb-0">Dashboard</a>
+    <div class="header-toggle d-flex align-items-center <?= (@$title == "showMore")?"d-none":""; ?>">
+     <a href="javascript:void(0)" class="toggle-bar"><i class="fa fa-bars"></i></a> <h4 class="card-title mb-0"><?= (@$title != "")?$title:"Dashboard"; ?></a>
     </div>

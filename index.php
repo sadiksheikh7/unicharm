@@ -1,5 +1,8 @@
 <!-- header -->
-  <?php include 'header.php';?>
+<?php 
+  $title = 'Dashboard';
+    include 'header.php';
+?>
 
   <!-- partial -->
 

@@ -1,5 +1,9 @@
 <!-- header -->
-  <?php include 'header.php';?>
+
+  <?php 
+	$title = 'Retailer';
+    include 'header.php';
+  ?>
 
   <!-- partial -->
     <div class="row">

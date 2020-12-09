@@ -1,5 +1,8 @@
 <!-- header -->
-  <?php include 'header.php';?>
+  <?php 
+	$title = 'Retailers';
+    include 'header.php';
+  ?>
   <style>
     .text-gray-300 {color: #dddfeb!important;}
     .text-gray-800 {color: #5a5c69!important;}

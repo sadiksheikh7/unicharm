@@ -333,6 +333,11 @@
   border-bottom: 0px solid !important; }
 
 /* my css start */
+.Table-Header tr th {
+  vertical-align: middle !important;
+  border-right: 1px solid #dee2e6;
+  border-top: 1px solid #dee2e6 !important; }
+
 .input-search-date {
   width: 200px;
   margin: 0 auto;
@@ -1085,8 +1090,7 @@
       -webkit-transform: rotate(90deg);
       transform: rotate(90deg); }
     .sidebar > .nav .nav-item.active > .nav-link {
-      color: #fff;
-      background: #1a237e !important; }
+      color: #01a9f4; }
       .sidebar > .nav .nav-item.active > .nav-link .menu-title {
         color: inherit; }
       .sidebar > .nav .nav-item.active > .nav-link i {
@@ -2786,8 +2790,8 @@ mark {
     vertical-align: middle;
     font-size: 0.875rem;
     line-height: 1;
-    white-space: nowrap;
-    height: 35px;
+    /*white-space: nowrap;
+		height: 35px;*/
     padding: 12px 15px; }
     .table th img:not(.thumb-image) {
       width: 35px;
