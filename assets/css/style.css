@@ -334,6 +334,11 @@
   border-bottom: 0px solid !important; }
 
 /* my css start */
+.custom-table-border {
+  border-right: 1px solid #dee2e6;
+  border-left: 1px solid #dee2e6;
+  border-bottom: 1px solid #dee2e6; }
+
 .Table-Header tr th {
   vertical-align: middle !important;
   border-right: 1px solid #dee2e6;
@@ -11276,8 +11281,10 @@ input[type=submit]::-moz-focus-inner {
     color: #636363;
     margin-bottom: 0px; }
 
-.custom-table td {
-  white-space: normal; }
+.custom-table {
+  width: 100% !important; }
+  .custom-table td {
+    white-space: normal; }
 
 .data-table .row {
   width: 100%; }

@@ -371,10 +371,13 @@ $white: #fff;
 	border-bottom: 0px solid !important;
 }
 /* my css start */
+.custom-table-border {
+    border-right: 1px solid #dee2e6;
+    border-left: 1px solid #dee2e6;
+    border-bottom: 1px solid #dee2e6;
+}
 
-// modal css
 
-// modal css
 .Table-Header tr th {
     vertical-align: middle !important;
     border-right: 1px solid #dee2e6;
@@ -13851,7 +13854,8 @@ input[type=submit] {
 		margin-bottom: 0px;
 	}
 }
-.custom-table {
+.custom-table  {
+	width: 100% !important;
 	td {
 		white-space: normal;
 	}

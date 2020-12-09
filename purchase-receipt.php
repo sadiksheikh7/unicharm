@@ -16,11 +16,11 @@
   <div class="col-lg-12">
     <div class="card mb-3">
       <div class="card-body">
-      <a href="add-retailer.php" type="button" class="btn btn-success btn-md mb-3 float-right"><i class="fa fa-plus" aria-hidden="true"></i> Add Purchase Receipt</a>
+      <a href="add-retailer.php" type="button" class="btn btn-success btn-md mb-3 float-right"><i class="fa fa-plus" aria-hidden="true"></i> Add Receipt</a>
 
       <div class="table-responsive data-table">
 
-      <table class="table custom-table" id="example">
+      <table class="table custom-table custom-table-border" id="example">
         <thead class="Table-Header">
 
          <tr>
