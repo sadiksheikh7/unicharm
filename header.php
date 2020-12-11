@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>UNICHARM</title>
     <!-- plugins:css -->
-    <link rel="stylesheet" href="assets/css/vendor/bootstrap.min.css" />
+    <!-- <link rel="stylesheet" href="assets/css/vendor/bootstrap.min.css" /> -->
     <link rel="stylesheet" href="assets/css/vendor/font-awesome-4.7.0/css/font-awesome.min.css" />
     <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
     <!-- <link rel="stylesheet" href="assets/css/shared/dropify.min.css"> -->
@@ -38,7 +38,6 @@
           </ul>
 
           <ul class="navbar-nav ml-auto">
-
           <li class="nav-item dropdown">
             <a class="nav-link btn-white-border" href="javascript:void(0)">
               <i class="fa fa-plus"></i>
@@ -47,7 +46,7 @@
           </li>
 
           <li class="nav-item dropdown">
-            <a class="nav-link count-indicator" href="javascript:void(0)">
+            <a class="nav-link count-indicator" href="notification.php">
               <i class="fa fa-bell"></i>
               <span class="count">7</span>
             </a>
@@ -62,21 +61,25 @@
             <li class="nav-item dropdown d-none d-xl-inline-block user-dropdown">
               <a class="nav-link" id="UserDropdown" href="javascript:void(0)" data-toggle="dropdown" aria-expanded="false">
                
-              <img class="img-xs rounded-circle" src="assets/images/face16.jpg" alt="Profile image"> <i  class="fa fa-angle-down"></i> </a>
+              <div class="admin-name clearfix">HM</div>
+              
+              <i  class="fa fa-angle-down"></i> </a>
               <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="UserDropdown">
                 <div class="dropdown-header text-center">
-                  <img class="img-md rounded-circle" src="assets/images/face16.jpg" alt="Profile image">
-                  <p class="mb-1 mt-3 font-weight-semibold">Sam</p>
-                  <p class="font-weight-light text-muted mb-0">Sam@unicharm.com</p>
+                
+                <div class="text-center">
+                  <div class="admin-name clearfix">HM</div>
                 </div>
-                <a href="profile.php" class="dropdown-item">My Profile <span class="badge badge-pill badge-danger">1</span><i class="dropdown-item-icon ti-dashboard"></i></a>
+                
+                  <p class="mb-1 mt-3 font-weight-semibold">HINDUSTHAN MERCENTILE</p>
+                </div>
+                <a href="javascript:void(0)" data-toggle="modal" data-target="#AccountSetting" class="dropdown-item">My Profile <i class="dropdown-item-icon ti-dashboard"></i></a>
                 <!-- <a href="upgrade-now.php" class="dropdown-item">Subscription</a>
                 <a href="javascript:void(0)" data-toggle="modal" data-target="#deleteAccount" class="dropdown-item">Deactivate Account</a>
                 <a href="javascript:void(0)" class="dropdown-item">Desactive Notifications</a> -->
                 <a href="login.php" class="dropdown-item">Sign Out<i class="dropdown-item-icon ti-power-off"></i></a>
               </div>
             </li>
-
           </ul>
           <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">
             <span class="mdi mdi-menu"></span>
@@ -89,211 +92,146 @@
         <nav class="sidebar sidebar-offcanvas" id="sidebar">
 
         <form class="ml-auto search-form d-none d-md-block" action="#">
-          <div class="form-group">
-            <input type="search" class="form-control" placeholder="Search Here">
-          </div>
+            <div class="form-group input-search">
+              <span class="fa fa-search"></span>
+              <input type="search" class="form-control" placeholder="Search Here" data-toggle="modal" data-target="#searchModal">
+            </div>
+
+
         </form>
 
           <ul class="nav">
-            <!-- <li class="nav-item nav-profile">
-              <a href="javascript:void(0)" class="nav-link">
-                <div class="profile-image">
-                  <img class="img-xs rounded-circle" src="assets/images/face16.jpg" alt="profile image">
-                  <div class="dot-indicator bg-success"></div>
-                </div>
-                <div class="text-wrapper">
-                  <p class="profile-name">Justin Thibeault</p>
-                  <p class="designation">Admin</p>
-                </div>
-              </a>
-            </li> -->
-
-            <!-- <li>
-              <a class="nav-link pb-0" href="javascript:void(0)"><p class="mb-0 semi-bold">Company Profile </p></a>
-            </li> -->
-
-
-            
-
-            
-            
-            
             <li class="clearfix">
-                <ul class="m-0 list-none mb-3">
-                  <h5 class="nav-title">Retailer Management</h5>
-                  <li class="nav-item <?= (@$title == "Retailers")?"active":""; ?>">
-                    <a class="nav-link" href="retailers.php">	
-                      <span class="menu-title">Retailers</span>
-                    </a>
-                  </li>
-                  <li class="nav-item <?= (@$title == "Add Retailer")?"active":""; ?>">
-                    <a class="nav-link" href="add-retailer.php">
-                      <span class="menu-title">Add Retailer</span>
-                    </a>
-                  </li>
-                  <li class="nav-item <?= (@$title == "Import Retailers")?"active":""; ?>">
-                    <a class="nav-link" href="javascript:void(0)">
-                      <span class="menu-title">Import Retailers</span>
-                    </a>
-                  </li>
-                </ul>
+            <ul class="m-0 list-none mb-3">
+              <h5 class="nav-title">Retailers</h5>
+              <li class="nav-item <?= (@$title == "Retailers")?"active":""; ?>">
+                <a class="nav-link" href="retailers.php">	
+                  <span class="menu-title">Retailers</span>
+                </a>
               </li>
-
-              <li class="clearfix">
-                <ul class="m-0 list-none mb-3">
-                  <h5 class="nav-title">Accounts</h5>
-                  <li class="nav-item <?= (@$title == "Purchases A/C")?"active":""; ?>">
-                    <a class="nav-link" href="ledger.php">
-                      <span class="menu-title">Purchases A/C</span>
-                    </a>
-                  </li>
-                  <!-- <li class="nav-item">
-                    <a class="nav-link" href="javascript:void(0)">
-                      <span class="menu-title">Purchase Order</span>
-                    </a>
-                  </li> -->
-                  <li class="nav-item <?= (@$title == "Purchase Receipt")?"active":""; ?>">
-                    <a class="nav-link" href="purchase-receipt.php">
-                      <span class="menu-title">Purchase Receipt</span>
-                    </a>
-                  </li>
-                  <li class="nav-item <?= (@$title == "Purchase Payment")?"active":""; ?>">
-                    <a class="nav-link" href="javascript:void(0)">
-                      <span class="menu-title">Purchase Payment</span>
-                    </a>
-                  </li>
-                  <li class="nav-item <?= (@$title == "Purchase Return")?"active":""; ?>">
-                    <a class="nav-link" href="javascript:void(0)">
-                      <span class="menu-title">Purchase Return</span>
-                    </a>
-                  </li>
-                </ul>
+              <li class="nav-item <?= (@$title == "Add Retailer")?"active":""; ?>">
+                <a class="nav-link" href="add-retailer.php">
+                  <span class="menu-title">Add Retailer</span>
+                </a>
               </li>
-              
-
-              <li class="clearfix">
-                <ul class="m-0 list-none mb-3">
-                  <h5 class="nav-title">Billing</h5>
-                  <li class="nav-item <?= (@$title == "Invoices")?"active":""; ?>">
-                    <a class="nav-link" href="javascript:void(0)">
-                      <span class="menu-title">Invoices</span>
-                    </a>
-                  </li>
-                  <li class="nav-item <?= (@$title == "Create Invoice")?"active":""; ?>">
-                    <a class="nav-link" href="javascript:void(0)">
-                      <span class="menu-title">Create Invoice</span>
-                    </a>
-                  </li>
-                  <li class="nav-item <?= (@$title == "Billing Setting")?"active":""; ?>">
-                    <a class="nav-link" href="javascript:void(0)">
-                      <span class="menu-title">Billing Setting</span>
-                    </a>
-                  </li>
-                </ul>
+              <li class="nav-item <?= (@$title == "Import Retailers")?"active":""; ?>">
+                <a class="nav-link" data-toggle="modal" data-target="#importRetailer" href="javascript:void(0)">
+                  <span class="menu-title">Import Retailers</span>
+                </a>
               </li>
-
-            <li class="clearfix">
-              <ul class="m-0 list-none mb-3">
-              <h5 class="nav-title">Menus</h5>
-
-                <li class="nav-item <?= (@$title == "Dashboard")?"active":""; ?>">
-                  <a class="nav-link" href="index.php">
-                    <span class="menu-title">Dashboard</span>
-                  </a>
-                </li>
-                <li class="nav-item <?= (@$title == "Products")?"active":""; ?>">
-                  <a class="nav-link" href="products.php">
-                    <span class="menu-title">Products</span>
-                  </a>
-                </li>
-                <li class="nav-item <?= (@$title == "Inventory")?"active":""; ?>">
-                  <a class="nav-link" href="javascript:void(0)">
-                    <span class="menu-title">Inventory</span>
-                  </a>
-                </li>
-                <li class="nav-item <?= (@$title == "Company")?"active":""; ?>">
-                  <a class="nav-link" href="javascript:void(0)">
-                    <span class="menu-title">Company</span>
-                  </a>
-                </li>
-                <li class="nav-item <?= (@$title == "Manage User")?"active":""; ?>">
-                  <a class="nav-link" href="javascript:void(0)">
-                    <span class="menu-title">Manage User</span>
-                  </a>
-                </li>
-                <li class="nav-item <?= (@$title == "Taxes")?"active":""; ?>">
-                  <a class="nav-link" href="javascript:void(0)">
-                    <span class="menu-title">Taxes</span>
-                  </a>
-                </li>
-                <li class="nav-item <?= (@$title == "Financial Year")?"active":""; ?>">
-                  <a class="nav-link" href="javascript:void(0)">
-                    <span class="menu-title">Financial Year</span>
-                  </a>
-                </li>
-                <li class="nav-item <?= (@$title == "Claim")?"active":""; ?>">
-                  <a class="nav-link" href="javascript:void(0)">
-                    <span class="menu-title">Claim</span>
-                  </a>
-                </li>
-                <li class="nav-item <?= (@$title == "Settings")?"active":""; ?>">
-                  <a class="nav-link" href="javascript:void(0)">
-                    <span class="menu-title">Settings</span>
-                  </a>
-                </li>
-                <li class="nav-item <?= (@$title == "Reports")?"active":""; ?>">
-                  <a class="nav-link" href="javascript:void(0)">
-                    <span class="menu-title">Reports</span>
-                  </a>
-                </li>
-                <li class="nav-item <?= (@$title == "showMore")?"active":""; ?>">
-                  <a class="nav-link" href="all-modules.php">
-                    <span class="menu-title text-cyan bold">Show More..</span>
-                  </a>
-                </li>
-              </ul>
+            </ul>
             </li>
 
-            
-          
+            <li class="clearfix">
+            <ul class="m-0 list-none mb-3">
+              <h5 class="nav-title">Accounts</h5>
+              <li class="nav-item <?= (@$title == "Purchases A/C")?"active":""; ?>">
+                <a class="nav-link" href="ledger.php">
+                  <span class="menu-title">Purchases A/C</span>
+                </a>
+              </li>
+              
+              <li class="nav-item <?= (@$title == "Purchase Receipt")?"active":""; ?>">
+                <a class="nav-link" href="purchase-receipt.php">
+                  <span class="menu-title">Purchase Receipt</span>
+                </a>
+              </li>
+              <li class="nav-item <?= (@$title == "Purchase Payment")?"active":""; ?>">
+                <a class="nav-link" href="javascript:void(0)">
+                  <span class="menu-title">Purchase Payment</span>
+                </a>
+              </li>
+              <li class="nav-item <?= (@$title == "Purchase Return")?"active":""; ?>">
+                <a class="nav-link" href="javascript:void(0)">
+                  <span class="menu-title">Purchase Return</span>
+                </a>
+              </li>
+            </ul>
+            </li>
 
 
-            <!-- <li class="nav-item">
+            <li class="clearfix">
+            <ul class="m-0 list-none mb-3">
+              <h5 class="nav-title">Billing</h5>
+              <li class="nav-item <?= (@$title == "Invoices")?"active":""; ?>">
+                <a class="nav-link" href="invoice.php">
+                  <span class="menu-title">Invoices</span>
+                </a>
+              </li>
+              <li class="nav-item <?= (@$title == "Create Invoice")?"active":""; ?>">
+                <a class="nav-link" href="create-invoice.php">
+                  <span class="menu-title">Create Invoice</span>
+                </a>
+              </li>
+              <li class="nav-item <?= (@$title == "Billing Setting")?"active":""; ?>">
+                <a class="nav-link" href="javascript:void(0)">
+                  <span class="menu-title">Billing Setting</span>
+                </a>
+              </li>
+            </ul>
+            </li>
+
+            <li class="clearfix">
+            <ul class="m-0 list-none mb-3">
+            <h5 class="nav-title">Menus</h5>
+
+            <li class="nav-item <?= (@$title == "Dashboard")?"active":""; ?>">
               <a class="nav-link" href="index.php">
-                <i class="menu-icon typcn typcn-document-text"></i>
                 <span class="menu-title">Dashboard</span>
               </a>
             </li>
-             <li>
-              <a class="nav-link pb-0" href="javascript:void(0)"><p class="mb-0 semi-bold">Budget</p></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" data-toggle="collapse" href="#budget" aria-expanded="false" aria-controls="budget">
-                <i class="menu-icon typcn typcn-coffee"></i>
-                <span class="menu-title">Budget</span>
-                <i class="menu-arrow"></i>
+            <li class="nav-item <?= (@$title == "Products")?"active":""; ?>">
+              <a class="nav-link" href="products.php">
+                <span class="menu-title">Products</span>
               </a>
-              <div class="collapse" id="budget">
-                <ul class="nav flex-column sub-menu">
-                  <li class="nav-item">
-                    <a class="nav-link" href="javascript:void(0)">Income</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="javascript:void(0)">Expenses</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="javascript:void(0)">Debit Accounts</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="javascript:void(0)">Assets</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="javascript:void(0)">liabilities</a>
-                  </li>
-                </ul>
-              </div>
-            </li> -->
-            
+            </li>
+            <li class="nav-item <?= (@$title == "Inventory")?"active":""; ?>">
+              <a class="nav-link" href="javascript:void(0)">
+                <span class="menu-title">Inventory</span>
+              </a>
+            </li>
+            <li class="nav-item <?= (@$title == "Company")?"active":""; ?>">
+              <a class="nav-link" data-toggle="modal" data-target="#AccountSetting" href="javascript:void(0)">  
+                <span class="menu-title">Company</span>
+              </a>
+            </li>
+            <li class="nav-item <?= (@$title == "Manage User")?"active":""; ?>">
+              <a class="nav-link" href="manage-user.php">
+                <span class="menu-title">Manage User</span>
+              </a>
+            </li>
+            <li class="nav-item <?= (@$title == "Taxes")?"active":""; ?>">
+              <a class="nav-link" href="javascript:void(0)">
+                <span class="menu-title">Taxes</span>
+              </a>
+            </li>
+            <li class="nav-item <?= (@$title == "Financial Year")?"active":""; ?>">
+              <a class="nav-link" href="javascript:void(0)">
+                <span class="menu-title">Financial Year</span>
+              </a>
+            </li>
+            <li class="nav-item <?= (@$title == "Claim")?"active":""; ?>">
+              <a class="nav-link" href="javascript:void(0)">
+                <span class="menu-title">Claim</span>
+              </a>
+            </li>
+            <li class="nav-item <?= (@$title == "Settings")?"active":""; ?>">
+              <a class="nav-link" href="javascript:void(0)">
+                <span class="menu-title">Settings</span>
+              </a>
+            </li>
+            <li class="nav-item <?= (@$title == "Reports")?"active":""; ?>">
+              <a class="nav-link" href="reports.php">
+                <span class="menu-title">Reports</span>
+              </a>
+            </li>
+            <li class="nav-item <?= (@$title == "showMore")?"active":""; ?>">
+              <a class="nav-link" href="all-modules.php">
+                <span class="menu-title text-cyan bold">Show More..</span>
+              </a>
+            </li>
+            </ul>
+            </li>
             
           </ul>
 

@@ -36,8 +36,8 @@
 
         <table class="width-100 table-ledger-head">
           <thead>
-            <th class="width-50 pr-3">Reverse Charge is increasing ↑ <span class="pull-right text-light-gray">Dr</span></th>
-            <th class="width-50">Reverse Charge is decreasing ↓ <span class="pull-right text-light-gray">Cr</span></th>
+            <th class="width-50 pr-3">Purchases <strong class="text-16 bold">↑</strong> (Increasing)<span class="pull-right text-light-gray">Dr</span></th>
+            <th class="width-50">Purchases <strong class="text-16 bold">↓</strong> decreasing  <span class="pull-right text-light-gray">Cr</span></th>
           </thead>
         </table>
 
@@ -53,40 +53,16 @@
                         <tr>
                           <th style="width: 120px;">Date</th>
                           <th>Particular</th>
-                          <th class="text-right">Amount</th>
+                          <th class="text-right" style="width: 150px;">Amount</th>
                         </tr>
                       </thead>
                       <tbody>
                         <tr>
-                          <td>08-12-2020</td>
-                          <td>To Sales</td>
-                          <td class="text-right">10,013.33</td>
+                          <td></td>
+                          <td></td>
+                          <td class="text-right"></td>
                         </tr>
-                        <tr>
-                          <td>08-12-2020</td>
-                          <td>To Sales</td>
-                          <td class="text-right">10,013.33</td>
-                        </tr>
-                        <tr>
-                          <td>08-12-2020</td>
-                          <td>To Sales</td>
-                          <td class="text-right">10,013.33</td>
-                        </tr>
-                        <tr>
-                          <td>08-12-2020</td>
-                          <td>To Sales</td>
-                          <td class="text-right">10,013.33</td>
-                        </tr>
-                        <tr>
-                          <td>08-12-2020</td>
-                          <td>To Sales</td>
-                          <td class="text-right">10,013.33</td>
-                        </tr>
-                        <tr>
-                          <td>08-12-2020</td>
-                          <td>To Sales</td>
-                          <td class="text-right">10,013.33</td>
-                        </tr>
+                        
                       </tbody>
                     </table>
                   </td>
@@ -98,25 +74,16 @@
                       <tr>
                         <th>Date</th>
                         <th>Particular</th>
-                        <th class="text-right">Amount</th>
+                        <th class="text-right" style="width: 150px;">Amount</th>
                       </tr>
                     </thead>
                       <tbody>
                         <tr>
-                          <td>08-12-2020</td>
-                          <td>To Sales</td>
-                          <td class="text-right">10,013.33</td>
+                          <td></td>
+                          <td></td>
+                          <td class="text-right"></td>
                         </tr>
-                        <tr>
-                          <td>08-12-2020</td>
-                          <td>To Sales</td>
-                          <td class="text-right">10,013.33</td>
-                        </tr>
-                        <tr>
-                          <td>08-12-2020</td>
-                          <td>To Sales</td>
-                          <td class="text-right">10,013.33</td>
-                        </tr>
+                        
                       </tbody>
                     </table>
                   </td>

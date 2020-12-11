@@ -1,5 +1,9 @@
 <!-- header -->
-<?php include 'header.php';?>
+<?php 
+  $title = 'Create Invoice';
+    include 'header.php';
+?>
+
 <style>
   .cancel-btn{padding:6px 12px;}
   .br-90{border-radius:90px;}

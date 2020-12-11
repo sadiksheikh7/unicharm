@@ -14,52 +14,52 @@
             <div class="row">
               <div class="col-md-3">
                 <div class="all-modules-box">
-                  <h3>Menus</h3>
+                  <h3>General</h3>
                   <ul>
-                    <li><a href="">Dashboard</a></li>
-                    <li><a href="">Dashboard</a></li>
-                    <li><a href="">Products</a></li>
-                    <li><a href="">Inventory</a></li>
+                    <li><a class="nav-link" href="retailers.php">Retailers</a></li>
+                    <li><a href="">Sales man</a></li>
+                    <li><a href="">User/Team</a></li>
                     <li><a href="">Company</a></li>
-                    <li><a href="">Manage User</a></li>
-                    <li><a href="">Taxes</a></li>
-                    <li><a href="">Financial Year</a></li>
-                    <li><a href="">Claim</a></li>
-                    <li><a href="">Settings</a></li>
-                    <li><a href="">Reports</a></li>
                   </ul>
                 </div>
               </div>
 
               <div class="col-md-3">
                 <div class="all-modules-box">
-                  <h3>Retailer Management</h3>
+                  <h3>Analysis</h3>
                   <ul>
-                    <li><a href="">Retailers</a></li>
-                    <li><a href="">Add Retailer</a></li>
-                    <li><a href="">Import Retailers</a></li>
+                    <li><a href="">Dashboard</a></li>
+                    <li><a href="">Reports</a></li>
+                    <li><a href="">Audit Log</a></li>
+                    <li><a href="">P&L Trial Balance</a></li>
+                    <li><a href="">Products Expenses</a></li>
                   </ul>
                 </div>
               </div>
               <div class="col-md-3">
                 <div class="all-modules-box">
-                  <h3>Accounts</h3>
+                  <h3>Invoice</h3>
                   <ul>
-                    <li><a href="">Purchases A/C</a></li>
-                    <li><a href="">Purchase Order</a></li>
+                    <li><a href="">Invoice Management</a></li>
+                    <li><a href="">Purchase Management</a></li>
+                    <li><a href="">New Invoice</a></li>
+                    <li><a href="">Purchase Bill</a></li>
                     <li><a href="">Purchase Receipt</a></li>
-                    <li><a href="">Purchase Payment</a></li>
-                    <li><a href="">Purchase Return</a></li>
+                    <li><a href="">Credit Note</a></li>
+                    <li><a href="">Debit Note</a></li>
                   </ul>
                 </div>
               </div>
               <div class="col-md-3">
                 <div class="all-modules-box">
-                  <h3>Billing</h3>
+                  <h3>Profile </h3>
                   <ul>
-                    <li><a href="">Invoices</a></li>
-                    <li><a href="">Create Invoice</a></li>
-                    <li><a href="">Billing Setting</a></li>
+                    <li><a href="">Feedback</a></li>
+                    <li><a href="">Privacy</a></li>
+                    <li><a href="">Suggestion </a></li>
+                    <li><a href="">Setting</a></li>
+                    <li><a href="">Support</a></li>
+                    <li><a href="">Live chat</a></li>
                   </ul>
                 </div>
               </div>
@@ -72,28 +72,12 @@
               
               <div class="col-md-3">
                 <div class="all-modules-box">
-                  <h3>Invoice</h3>
+                  <h3>Other</h3>
                   <ul>
-                    <li><a href="">Cash Invoice</a></li>
-                    <li><a href="">Sales Invoice</a></li>
-                    <li><a href="">Purchase Bill</a></li>
-                    <li><a href="">Purchase Order</a></li>
-                    <li><a href="">Dr/Cr Note</a></li>
-                    <li><a href="">Receipt Voucher</a></li>
-                    <li><a href="">Invoice Management</a></li>
-                    <li><a href="">Purchase Management</a></li>
-                  </ul>
-                </div>
-              </div>
-              <div class="col-md-3">
-                <div class="all-modules-box">
-                  <h3>Inventory</h3>
-                  <ul>
+                    <li><a href="">GSTR</a></li>
                     <li><a href="">Inventory</a></li>
-                    <li><a href="">Purchase Order</a></li>
-                    <li><a href="">Branch Transfer</a></li>
-                    <li><a href="">Warehouse</a></li>
-                    <li><a href="">Purchase Return</a></li>
+                    <li><a href="">About Unicharm's </a></li>
+                    <li><a href="">Unicharm's Website  </a></li>
                   </ul>
                 </div>
               </div>
@@ -102,29 +86,8 @@
                   <h3>Security</h3>
                   <ul>
                     <li><a href="">Import Data</a></li>
-                    <li><a href="">TALLY Import</a></li>
-                    <li><a href="">Company Import/Export</a></li>
                     <li><a href="">Permission</a></li>
                     <li><a href="">Integration</a></li>
-                  </ul>
-                </div>
-              </div>
-              
-              <div class="col-md-3">
-                <div class="all-modules-box">
-                  <h3>Analysis</h3>
-                  <ul>
-                    <li><a href="">Dashboard</a></li>
-                    <li><a href="">Reports</a></li>
-                    <li><a href="">Sales Bifurcation</a></li>
-                    <li><a href="">Daybook</a></li>
-                    <li><a href="">Audit Log</a></li>
-                    <li><a href="">Audit Log New</a></li>
-                    <li><a href="">Search</a></li>
-                    <li><a href="">Trial Balance</a></li>
-                    <li><a href="">P&L, B/S</a></li>
-                    <li><a href="">Settings</a></li>
-                    <li><a href="">Reports</a></li>
                   </ul>
                 </div>
               </div>
