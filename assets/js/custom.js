@@ -54,6 +54,8 @@ $(document).ready(function() {
   });
 // custom search end
 
+setTimeout(function() {$('#successfully-modal').modal('hide');}, 3000);
+
 
 	$('a[rel="relativeanchor"]').click(function(){
 	    $('html, body').animate({
@@ -124,6 +126,21 @@ $(document).ready(function() {
   // data table end
 
 
+  // loader js start
+    $({property: 0}).animate({property: 105}, {
+        duration: 3000,
+        step: function() {
+            var _percent = Math.round(this.property);
+            $('#progress').css('width',  _percent+"%");
+            if(_percent == 105) {
+                $("#progress").addClass("done");
+            }
+        },
+        complete: function() {
+            //alert('complete');
+        }
+    });
+  // loader js end
 
 new WOW().init();
 

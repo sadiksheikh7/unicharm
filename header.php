@@ -23,6 +23,12 @@
     <link rel="shortcut icon" href="assets/images/logo.png" />
   </head>
   <body>
+
+  <div id="progress" class="waiting">
+    <dt></dt>
+    <dd></dd>
+  </div>
+
     <div class="container-scroller">
       <nav class="navbar default-layout col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
         <div class="navbar-brand-wrapper d-flex align-items-top">
@@ -45,18 +51,35 @@
             </a>
           </li>
 
-          <li class="nav-item dropdown">
-            <a class="nav-link count-indicator" href="notification.php">
+
+          <li class="nav-item dropdown d-none d-xl-inline-block user-dropdown">
+              <a class="nav-link count-indicator" id="UserDropdown-2" href="javascript:void(0)" data-toggle="dropdown" aria-expanded="false">
               <i class="fa fa-bell"></i>
-              <span class="count">7</span>
-            </a>
+              <span class="count">7</span> </a>
+              <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="UserDropdown-2">
+              <div class="notification-dropdown-inner">
+                <div class="notification-dropdown-box">
+                  <a href="#">
+In multi-currency feature, sundry creditors will be created for the company's country only.</a></div>
+                <div class="notification-dropdown-box"><a href="#"><label class="label category">New</label>
+Sundry debtors and Sundry creditors get new custom field support from masters</a></div>
+                <div class="notification-dropdown-box"><a href="#">Release Notes v7.0.79</a></div>
+                <div class="notification-dropdown-box"><a href="#">
+New date picker implemented in dashboard, vendor, aging report, customer and universal modules....</a></div>
+            </div>
+
+            <a href="notification.php" class="btn custom-blue btn-block">View all notification</a>
+              </div>
           </li>
+
 
           <li class="nav-item dropdown">
             <a class="nav-link count-indicator" href="javascript:void(0)">
               <i class="fa fa-info-circle ml-2" style="font-size: 21px !important;"></i>
             </a>
           </li>
+
+          
 
             <li class="nav-item dropdown d-none d-xl-inline-block user-dropdown">
               <a class="nav-link" id="UserDropdown" href="javascript:void(0)" data-toggle="dropdown" aria-expanded="false">
@@ -138,7 +161,7 @@
               </li>
               <li class="nav-item <?= (@$title == "Purchase Payment")?"active":""; ?>">
                 <a class="nav-link" href="javascript:void(0)">
-                  <span class="menu-title">Purchase Payment</span>
+                  <span class="menu-title">Add Purchase</span>
                 </a>
               </li>
               <li class="nav-item <?= (@$title == "Purchase Return")?"active":""; ?>">

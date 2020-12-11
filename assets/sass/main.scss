@@ -371,6 +371,152 @@ $white: #fff;
 	border-bottom: 0px solid !important;
 }
 /* my css start */
+
+
+a:hover {
+	text-decoration: none !important;
+}
+
+/* loader css start */
+#progress {
+	position: fixed;
+	z-index: 2147483647;
+	top: 0;
+	left: -6px;
+	width: 0%;
+	height: 5px;
+	background: #f47b20;
+	-moz-border-radius: 1px;
+	-webkit-border-radius: 1px;
+	border-radius: 1px;
+	-moz-transition: width 500ms ease-out,opacity 400ms linear;
+	-ms-transition: width 500ms ease-out,opacity 400ms linear;
+	-o-transition: width 500ms ease-out,opacity 400ms linear;
+	-webkit-transition: width 500ms ease-out,opacity 400ms linear;
+	transition: width 500ms ease-out,opacity 400ms linear
+}
+#progress.done {
+	opacity: 0
+}
+#progress dd,#progress dt {
+	position: absolute;
+	top: 0;
+	height: 20px;
+	-moz-box-shadow: #b91f1f 1px 0 6px 1px;
+	-ms-box-shadow: #b91f1f 1px 0 6px 1px;
+	-webkit-box-shadow: #b91f1f 1px 0 6px 1px;
+	box-shadow: #b91f1f 1px 0 6px 1px;
+	-moz-border-radius: 100%;
+	-webkit-border-radius: 100%;
+	border-radius: 100%	
+}
+#progress dd {
+	opacity: 1;
+	width: 20px;
+	right: 0;
+	clip: rect(-6px,22px,14px,10px)
+}
+#progress dt {
+	opacity: 1;
+	width: 180px;
+	right: -80px;
+	clip: rect(-6px,90px,14px,-6px)
+}
+@-moz-keyframes pulse {
+	30% {
+		opacity: 1
+	}
+	60% {
+		opacity: 0
+	}
+	100% {
+		opacity: 1
+	}
+}
+@-ms-keyframes pulse {
+	30% {
+		opacity: .6
+	}
+	60% {
+		opacity: 0
+	}
+	100% {
+		opacity: .6
+	}
+}
+@-o-keyframes pulse {
+	30% {
+		opacity: 1
+	}
+	60% {
+		opacity: 0
+	}
+	100% {
+		opacity: 1
+	}
+}
+@-webkit-keyframes pulse {
+	30% {
+		opacity: .6
+	}
+	60% {
+		opacity: 0
+	}
+	100% {
+		opacity: .6
+	}
+}
+@keyframes pulse {
+	30% {
+		opacity: 1
+	}
+	60% {
+		opacity: 0
+	}
+	100% {
+		opacity: 1
+	}
+}
+#progress.waiting dd,#progress.waiting dt {
+	-moz-animation: pulse 2s ease-out 0s infinite;
+	-ms-animation: pulse 2s ease-out 0s infinite;
+	-o-animation: pulse 2s ease-out 0s infinite;
+	-webkit-animation: pulse 2s ease-out 0s infinite;
+	animation: pulse 2s ease-out 0s infinite
+}
+/* loader css end */
+
+
+.notification-dropdown-inner {
+    max-height: 300px;
+    overflow: auto;
+}
+.notification-dropdown-box:hover {
+	background: #f1f1f1;
+	text-decoration: none;
+}
+.notification-dropdown-box > a {
+    border-bottom: 1px solid #ccc;
+	padding: 12px;
+	color: #525252;
+	line-height: 20px;
+	display: block;
+}
+
+.successfull-modal {
+    padding: 30px 0;
+    border: 4px dashed #f1f1f1;
+    border-radius: 3px;
+}
+.successfull-modal h2 {
+    margin-bottom: 20px;
+    color: #50c366;
+    font-size: 26px;
+}
+.successfull-modal img {
+    width: 80px;
+}
+
 .search-modal .modal-dialog {
     max-width: 600px;
 }
@@ -387,11 +533,42 @@ $white: #fff;
     padding: 20px;
     margin-bottom: 20px;
 }
+.custom-search-list {
+	padding: 0px;
+	max-height: 500px;
+    overflow-y: auto;
+}
+
 .custom-search-list > li > a {
 	display: flex;
-    padding: 10px 10px;
+    padding: 10px 25px;
     color: #808080;
+	align-items: center;
+	transition: .5s all ease;
 }
+.custom-search-list > li:hover > a {
+	background: #5b64c9;
+	color: $white;
+	text-decoration: none;
+}
+.custom-search-list > li:hover > a .search-list-text p,.custom-search-list > li:hover > a .search-list-text p code, .custom-search-list > li:hover > a .search-list-text small {
+	color: $white;
+}
+.custom-search-list > li > a > .list-icon {
+    margin-right: 15px;
+}
+.custom-search-list > li > a .search-list-text p {
+    margin: 0px;
+    line-height: normal;
+}
+.custom-search-list > li > a .search-list-text p code {
+    color: #525252;
+    font-size: 16px;
+}
+.custom-search-list > li > a .search-list-text small {
+    color: #a9a9a9;
+}
+
 
 // ** file upload css start ** /
 .admin-name {
@@ -467,7 +644,8 @@ $white: #fff;
 // ** file upload css end ** /
 
 .search-modal .modal-dialog {
-    max-width: 600px;
+	max-width: 600px;
+	margin-top: 5%;
 }
 .search-modal .modal-dialog .custom-search {
     width: 100%;

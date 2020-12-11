@@ -51,8 +51,8 @@
             <tbody>
               
                <tr>
-                <td>IN00001995</td>
-                <td>HINDUSTHAN MERCENTILE</td>
+                <td>8503140</td>
+                <td>MamyPoko Pants L1</td>
                 <td>1231</td>
                 <td>1056</td>
                 <td>2097</td>
@@ -66,8 +66,8 @@
 
               
                <tr>
-                <td>IN00001995</td>
-                <td>SRI MANJUNATHA MARKETING</td>
+                <td>8503147</td>
+                <td>MamyPoko Pants L1Price Off	</td>
                 <td>564</td>
                 <td>569848</td>
                 <td>564</td>
@@ -79,8 +79,8 @@
                 <td>6822.23065448931</td>
               </tr>
               <tr>
-                <td>IN00001995</td>
-                <td>TRADE N TRADE</td>
+                <td>3203143</td>
+                <td>MamyPoko Pants L20	</td>
                 <td>235</td>
                 <td>4544</td>
                 <td>121695</td>
@@ -92,8 +92,8 @@
                 <td>87.23065448931</td>
               </tr>
               <tr>
-                <td>IN00001995</td>
-                <td>M/s J P Enterprises</td>
+                <td>3203144</td>
+                <td>MamyPoko Pants L38	</td>
                 <td>9875</td>
                 <td>5614</td>
                 <td>65</td>
@@ -105,8 +105,8 @@
                 <td>65589.23065448931</td>
               </tr>
               <tr>
-                <td>IN00001995</td>
-                <td>PRADIP ENTERPRISE</td>
+                <td>8503141</td>
+                <td>MamyPoko Pants L4	</td>
                 <td>85858</td>
                 <td>5421</td>
                 <td>5478</td>
@@ -117,20 +117,6 @@
                 <td>1111.324</td>
                 <td>54874.23065448931</td>
               </tr>
-              <tr>
-                <td>IN00001995</td>
-                <td>HINDUSTHAN MERCENTILE</td>
-                <td>1231</td>
-                <td>1056</td>
-                <td>2097</td>
-                <td>1458.34</td>
-                <td>8989.43</td>
-                <td>9898.43</td>
-                <td>989.334</td>
-                <td>324.324</td>
-                <td>1022.23065448931</td>
-              </tr>
-
             </tbody>
 
           </table>

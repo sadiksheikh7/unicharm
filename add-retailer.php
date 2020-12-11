@@ -149,8 +149,9 @@
                   </div>
                 </div>
               </div>
-              <button type="buttton" class="btn btn-primary">Create</button>
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#successfully-modal">Create</button>
               <button type="submit" class="btn btn-danger cancel-btn">Cancel</button>
+
             </form>
           </div>
         </div>
@@ -159,5 +160,22 @@
     
     <!-- content-wrapper ends -->
   
+
+    <!-- The Modal -->
+<div class="modal custom-modal" id="successfully-modal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <!-- Modal body -->
+      <div class="modal-body text-center">
+        <div class="successfull-modal">
+          <h2>Your Retailer has been successfully created</h2>
+          <img src="assets/images/success.svg" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
   <!-- footer -->
   <?php include 'footer.php';?>
