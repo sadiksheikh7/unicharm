@@ -26,8 +26,8 @@
             <div class="row">
               <div class="col-lg-6">
                 <div class="profile-wrap">
-                  <h3>Hindustan Merchantile</h3>
-                  <p class="text-pink mb-0">Code : 9C2EAA15EF</p>
+                  <h3>TALUKDAR ENTERPRISE</h3>
+                  <p class="text-pink mb-0">Code : ILE	HIND009</p>
                   <p>51 st Floor, J S arcade, Sector, Noida</p>
                   <a href="javascript:void(0);" onclick="myFunction()" id="note-label">
                     <small>Add Note</small>
@@ -311,67 +311,55 @@
               <!-- Side Drawer Links -->
               <ul id="links" class="list-group p-20 pt-0" onclick="closeSideDrawer()">
                 <a href="retailer-details.php" class="border-0 rounded-0 active">
-                  <span>BuyDrug</span>
+                  <span>Dunzo Customer</span>
                 </a>
                 <a href="retailer-details.php" class="border-0 rounded-0">
-                  <span>mChemist</span>
+                  <span>Karnamyam Trade and Working Agency</span>
                 </a>
                 <a href="retailer-details.php" class="border-0 rounded-0">
-                  <span>MediDart</span>
+                  <span>J KTraders</span>
                 </a>
                 <a href="retailer-details.php" class="border-0 rounded-0">
-                  <span>Medplus Mart</span>
+                  <span>Pick Me Stationary</span>
                 </a>
                 <a href="retailer-details.php" class="border-0 rounded-0">
-                  <span>Mera Pharmacy</span>
+                  <span>New Kanak Store</span>
                 </a>
                 <a href="retailer-details.php" class="border-0 rounded-0">
-                  <span>Netmeds</span>
+                  <span>Shivam Store</span>
                 </a>
                 <a href="retailer-details.php" class="border-0 rounded-0">
-                  <span>Zigy</span>
+                  <span>Talukdar Enterprise</span>
                 </a>
                 <a href="retailer-details.php" class="border-0 rounded-0">
-                  <span>D'Mart</span>
+                  <span>MSP Enterprise</span>
                 </a>
                 <a href="retailer-details.php" class="border-0 rounded-0">
-                  <span>Mymedical</span>
+                  <span>Swiggy Customer</span>
                 </a>
                 <a href="retailer-details.php" class="border-0 rounded-0">
-                  <span>MediBazaar</span>
+                  <span>Zomato Customer</span>
                 </a>
                 <a href="retailer-details.php" class="border-0 rounded-0">
-                  <span>MetroOnline</span>
+                  <span>M/S Manab Seva Sadan Drug Distributors</span>
                 </a>
                 <a href="retailer-details.php" class="border-0 rounded-0">
-                  <span>BigBazaar</span>
+                  <span>Chandra Bhander</span>
                 </a>
                 <a href="retailer-details.php" class="border-0 rounded-0">
-                  <span>Medplus Mart</span>
+                  <span>Gayshree Pharmaceuticals Surgical	</span>
                 </a>
                 <a href="retailer-details.php" class="border-0 rounded-0">
-                  <span>BuyDrug</span>
+                  <span>Pawan Pharmaceuticals Surgical</span>
                 </a>
                 <a href="retailer-details.php" class="border-0 rounded-0">
-                  <span>Mera Pharmacy</span>
+                  <span>New Kanak Store</span>
                 </a>
                 <a href="retailer-details.php" class="border-0 rounded-0">
-                  <span>MediBazaar</span>
+                  <span>Chandra Bhander</span>
                 </a>
                 <a href="retailer-details.php" class="border-0 rounded-0">
-                  <span>MetroOnline</span>
-                </a>
-                <a href="retailer-details.php" class="border-0 rounded-0">
-                  <span>BigBazaar</span>
-                </a>
-                <a href="retailer-details.php" class="border-0 rounded-0">
-                  <span>Medplus Mart</span>
-                </a>
-                <a href="retailer-details.php" class="border-0 rounded-0">
-                  <span>BuyDrug</span>
-                </a>
-                <a href="retailer-details.php" class="border-0 rounded-0">
-                  <span>Mera Pharmacy</span>
+                  <span>Shivam Store</span>
                 </a>
               </ul>
           </div>

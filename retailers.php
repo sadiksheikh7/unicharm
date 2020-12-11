@@ -81,7 +81,7 @@
                 <tbody>
                   <tr>
                     <td class="first-column">
-                      <a href="retailer-details.php" class="retailer-name">Netmeds</a>
+                      <a href="retailer-details.php" class="retailer-name">Dunzo Customer</a>
                       <div class="dropdown float-right table-droppy">
                         <a role="button" type="button" data-toggle="dropdown">
                           <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
@@ -98,7 +98,7 @@
                       </div>
                     </td>
                     <td>+81-705-5513-953</td>
-                    <td>netmeds@gmail.com</td>
+                    <td>dunzo@gmail.com</td>
                     <td>---</td>
                     <td>C-Block, Sector-11, Noida</td>
                     <td>
@@ -108,7 +108,7 @@
                   
                   <tr>
                     <td>
-                      <a href="retailer-details.php" class="retailer-name">Medplus Mart</a>
+                      <a href="retailer-details.php" class="retailer-name">KARMANYAM TRADE AND WORKING AGENCY</a>
                       <div class="dropdown float-right table-droppy">
                         <a role="button" type="button" data-toggle="dropdown">
                           <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
@@ -125,7 +125,7 @@
                       </div>
                     </td>
                     <td>+91-755-5491-507</td>
-                    <td>medplus@gmail.com</td>
+                    <td>karmanyam@gmail.com</td>
                     <td>---</td>
                     <td>51 st Floor, Noida</td>
                     <td>
@@ -135,7 +135,7 @@
                   
                   <tr>
                     <td>
-                      <a href="retailer-details.php" class="retailer-name">MediDart</a>
+                      <a href="retailer-details.php" class="retailer-name">PAWAN PHARMACEUTICALS  SURGICAL</a>
                       <div class="dropdown float-right table-droppy">
                         <a role="button" type="button" data-toggle="dropdown">
                           <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
@@ -152,7 +152,7 @@
                       </div>
                     </td>
                     <td>+91-855-5480-129</td>
-                    <td>medi_dart@gmail.com</td>
+                    <td>pawan-pharma@gmail.com</td>
                     <td>---</td>
                     <td>48 , Ashram Road, B/h City Gold, Ashram Road, Ahmedabad</td>
                     <td>
@@ -162,7 +162,7 @@
                   
                   <tr>
                     <td>
-                      <a href="retailer-details.php" class="retailer-name">BuyDrug</a>
+                      <a href="retailer-details.php" class="retailer-name">GAYSHREE PHARMACEUTICALS  SURGICAL	</a>
                       <div class="dropdown float-right table-droppy">
                         <a role="button" type="button" data-toggle="dropdown">
                           <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
@@ -179,7 +179,7 @@
                       </div>
                     </td>
                     <td>+91-975-5591-888</td>
-                    <td>buy-drug@gmail.com</td>
+                    <td>gayshree@gmail.com</td>
                     <td>---</td>
                     <td>Sree Ij Patel High School, Behind Chandan Cinema, Juhu,  Mumbai</td>
                     <td>
@@ -189,7 +189,7 @@
                   
                   <tr>
                     <td>
-                      <a href="retailer-details.php" class="retailer-name">Zigy</a>
+                      <a href="retailer-details.php" class="retailer-name">J KTRADERS</a>
                       <div class="dropdown float-right table-droppy">
                         <a role="button" type="button" data-toggle="dropdown">
                           <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
@@ -206,7 +206,7 @@
                       </div>
                     </td>
                     <td>+91-855-5798-315</td>
-                    <td>zigy@gmail.com</td>
+                    <td>jk_traders@gmail.com</td>
                     <td>---</td>
                     <td>26  Special Economic Zone, Noida</td>
                     <td>
@@ -216,7 +216,7 @@
                   
                   <tr>
                     <td>
-                      <a href="retailer-details.php" class="retailer-name">mChemist</a>
+                      <a href="retailer-details.php" class="retailer-name">PICK ME STATIONERY</a>
                       <div class="dropdown float-right table-droppy">
                         <a role="button" type="button" data-toggle="dropdown">
                           <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
@@ -233,7 +233,7 @@
                       </div>
                     </td>
                     <td>+91-855-5903-050</td>
-                    <td>mchem@gmail.com</td>
+                    <td>pick_stationary@gmail.com</td>
                     <td>---</td>
                     <td>26  Special Economic Zone, Noida</td>
                     <td>
@@ -243,7 +243,7 @@
                   
                   <tr>
                     <td>
-                      <a href="retailer-details.php" class="retailer-name">Mera Pharmacy</a>
+                      <a href="retailer-details.php" class="retailer-name">NEW KANAK STORE</a>
                       <div class="dropdown float-right table-droppy">
                         <a role="button" type="button" data-toggle="dropdown">
                           <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
@@ -260,7 +260,7 @@
                       </div>
                     </td>
                     <td>+91-855-5772-100</td>
-                    <td>merapharma@gmail.com</td>
+                    <td>newkanak@gmail.com</td>
                     <td>---</td>
                     <td>51 st Floor, J S arcade, Sector, Noida</td>
                     <td>
