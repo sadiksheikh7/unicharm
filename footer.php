@@ -1,3 +1,80 @@
+<style>
+  .notification-box{
+    border:1px solid #eee;
+    padding:20px;
+  }
+  /* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 52px;
+  height: 25px;
+  float:right;
+}
+
+/* Hide default HTML checkbox */
+.switch input {display:none;}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 18px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input.default:checked + .slider {
+  background-color: #444;
+}
+input.primary:checked + .slider {
+  background-color: #2196F3;
+}
+input.success:checked + .slider {
+  background-color: #8bc34a;
+}
+input.info:checked + .slider {
+  background-color: #3de0f5;
+}
+input.warning:checked + .slider {
+  background-color: #FFC107;
+}
+input.danger:checked + .slider {
+  background-color: #f44336;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+  .slider.round {
+    border-radius: 34px;
+  }
+  .slider.round:before {
+    border-radius: 50%;
+  }
+</style>
 <!-- <footer class="footer">
 <div class="container-fluid clearfix">
     <span class="text-muted d-block text-center text-sm-left d-sm-inline-block mt-3">© 2020 CREDOM, Inc. Patent Pending. All rights reserved.
@@ -33,7 +110,7 @@
           <div class="nav flex-column nav-pills tabs-list" id="v-pills-tab" role="tablist" aria-orientation="vertical">
             <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">Profile</a>
             <a id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">Change Password</a>
-            <a id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">Notification</a>
+            <a id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">Notification Settings</a>
             <a id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">Setting</a>
           </div>
         </div>
@@ -444,7 +521,192 @@
               </div>
 
             </div>
-            <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">...</div>
+            <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+              <div class="setting-tab-box">
+                <div class="setting-tab-box-edit">
+                  <div class="row mb-2">
+                    <div class="col-md-6">
+                      <div class="notification-box">
+                        <h4><b>Notification Settings</b></h4>
+                        <hr>
+                        <div class="row mb-2">
+                          <div class="col-md-10">
+                            <label class="label-form">
+                              <b>Notifications</b>
+                            </label>
+                          </div>
+                          <div class="col-md-2 text-center">
+                            <label class="switch ">
+                              <input type="checkbox" class="primary">
+                              <span class="slider round"></span>
+                            </label>
+                          </div>
+                        </div>
+                        <!--<div class="row mb-2">
+                          <div class="col-md-8">
+                            <label class="label-form">
+                              <b>Unicahrm Updates</b>
+                            </label>
+                          </div>
+                          <div class="col-md-2 text-center">
+                            <label><i class="fa fa-envelope" aria-hidden="true"></i> Email</label>
+                          </div>
+                          <div class="col-md-2 text-center">
+                            <label><i class="fa fa-clone" aria-hidden="true"></i> Push</label>
+                          </div>
+                        </div>
+                        <div class="row mb-2">
+                          <div class="col-md-12">
+                            <hr>
+                          </div>
+                        </div>
+                        
+                        <div class="row mb-2">
+                          <div class="col-md-8">
+                            <label class="label-form">
+                              <span>Product News</span><br>
+                              <small>Getting started, new features and the latest product updates on Unicharm</small>
+                            </label>
+                          </div>
+                          <div class="col-md-2 text-center">
+                            <label>
+                              <input type="checkbox" class="form-check-input">
+                            </label>
+                          </div>
+                          <div class="col-md-2 text-center">
+                            <label>
+                              <input type="checkbox" class="form-check-input">
+                            </label>
+                          </div>
+                        </div>
+                        
+                        <div class="row mb-2">
+                          <div class="col-md-8">
+                            <label class="label-form">
+                              <span>Unicharm News and Offers</span><br>
+                              <small>News, promos and events for you</small>
+                            </label>
+                          </div>
+                          <div class="col-md-2 text-center">
+                            <label>
+                              <input type="checkbox" class="form-check-input">
+                            </label>
+                          </div>
+                          <div class="col-md-2 text-center">
+                            <label>
+                              <input type="checkbox" class="form-check-input">
+                            </label>
+                          </div>
+                        </div>
+                        
+                        <div class="row mb-2">
+                          <div class="col-md-12">
+                            <label class="label-form">
+                              <span><b>Your Music</b></span><br>
+                            </label>
+                            <hr>
+                          </div>
+                        </div>
+                        
+                        <div class="row mb-2">
+                          <div class="col-md-8">
+                            <label class="label-form">
+                              <span>Add Retailer</span><br>
+                            </label>
+                          </div>
+                          <div class="col-md-2 text-center">
+                            <label>
+                              <input type="checkbox" class="form-check-input">
+                            </label>
+                          </div>
+                          <div class="col-md-2 text-center">
+                            <label>
+                              <input type="checkbox" class="form-check-input">
+                            </label>
+                          </div>
+                        </div>
+                        
+                        <div class="row mb-2">
+                          <div class="col-md-8">
+                            <label class="label-form">
+                              <span>New Music</span><br>
+                              <small>Fresh tracks from artists you follow or might like</small>
+                            </label>
+                          </div>
+                          <div class="col-md-2 text-center">
+                            <label>
+                              <input type="checkbox" class="form-check-input">
+                            </label>
+                          </div>
+                          <div class="col-md-2 text-center">
+                            <label>
+                              <input type="checkbox" class="form-check-input">
+                            </label>
+                          </div>
+                        </div>
+                        
+                        <div class="row mb-2">
+                          <div class="col-md-8">
+                            <label class="label-form">
+                              <span>Playlist Updates</span><br>
+                              <small>A playlist you folloe is updated</small>
+                            </label>
+                          </div>
+                          <div class="col-md-2 text-center">
+                            <label>
+                              <input type="checkbox" class="form-check-input">
+                            </label>
+                          </div>
+                          <div class="col-md-2 text-center">
+                            <label>
+                              <input type="checkbox" class="form-check-input">
+                            </label>
+                          </div>
+                        </div>
+                        
+                        <div class="row mb-2">
+                          <div class="col-md-8">
+                            <label class="label-form">
+                              <span>Concert Notifications</span><br>
+                              <small>Updates about live shows by artists you like, in places near you</small>
+                            </label>
+                          </div>
+                          <div class="col-md-2 text-center">
+                            <label>
+                              <input type="checkbox" class="form-check-input">
+                            </label>
+                          </div>
+                          <div class="col-md-2 text-center">
+                            <label>
+                              <input type="checkbox" class="form-check-input">
+                            </label>
+                          </div>
+                        </div>
+                        
+                        <div class="row mb-2">
+                          <div class="col-md-8">
+                            <label class="label-form">
+                              <span>Artist Updates</span><br>
+                              <small>Hear about artists you listen to</small>
+                            </label>
+                          </div>
+                          <div class="col-md-2 text-center">
+                            <label>
+                              <input type="checkbox" class="form-check-input">
+                            </label>
+                          </div>
+                          <div class="col-md-2 text-center">
+                            <label>
+                              <input type="checkbox" class="form-check-input">
+                            </label>
+                          </div>
+                        </div>-->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>      
+            </div>
             <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">...</div>
           </div>
         </div>

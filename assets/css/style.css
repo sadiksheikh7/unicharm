@@ -1974,7 +1974,8 @@ a {
   text-decoration: none;
   background-color: transparent;
   text-shadow: none;
-  box-shadow: none; }
+  box-shadow: none;
+  padding:0.5rem 1rem; }
   a:hover {
     color: #0056b3;
     text-decoration: underline;
